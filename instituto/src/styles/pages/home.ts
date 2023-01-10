@@ -61,9 +61,33 @@ export const AcessoEmpresas = styled('a', {
 });
 
 export const Idealizadores = styled('div', {
-  backgroundColor: '$gray300',
+  backgroundColor : '$gray300',
+  color           : '$white',
+});
+
+export const ContainerBio = styled('div', {
+  padding: '1rem',
 });
 
 export const Bio = styled('div', {
-  backgroundColor: '$gray300',
-})
+  display     : 'flex',
+  alignItems  : 'center',
+
+  p: {
+    width: '450%',
+  },
+
+});
+
+export const Local = styled('div', {
+  iframe: {
+    width: '100%',
+  }
+});
+
+export const Parceiros = styled('div', {
+  height          : '20rem',
+  backgroundColor : '$gray300',
+  color           : '$white',
+  textAlign       : 'center',
+});

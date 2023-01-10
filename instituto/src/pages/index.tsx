@@ -1,4 +1,4 @@
-import { Acesso, AcessoEmpresas, Bio, ContainerMissaoVisao, HomeContainer, Idealizadores, MissaoVisao, QuemSomos, Servicos, Title } from '../styles/pages/home'
+import { Acesso, AcessoEmpresas, Bio, ContainerBio, ContainerMissaoVisao, HomeContainer, Idealizadores, Local, MissaoVisao, Parceiros, QuemSomos, Servicos, Title } from '../styles/pages/home'
 
 import Image from 'next/legacy/image'
 import logoInstituto from '../assets/logos/logo-3.png'
@@ -51,14 +51,38 @@ export default function Home() {
       </Servicos>
 
       <Idealizadores>
-        <Bio>
+        <ContainerBio>
           <h1>Israel Mendes</h1>
-          <a href="https://www.instagram.com/mendesisrael97/" target="_blank">
-            <Image src={fotoIsrael}/>
-          </a>
-          <p>O idealizador Israel, formado em bacharel e licenciatura de educação física no Centro Universitário São José; está cursando o ensino superior de ciência da computação na Descomplica e formado nos cursos de excel básico; organização e produtividade; técnicas e ferramentas para gestão de projetos e produtos; introdução ao desenvolvimento web; desenvolvimento web HTML5 + CSS3; micro empreendedor individual; e, sargento do exécito brasileiro da brigada de infataria paraquedista, é casado com a Sr Rafaela de Sá.</p>
-        </Bio>
+          <Bio>
+            <a href="https://www.instagram.com/mendesisrael97/" target="_blank">
+              <Image src={fotoIsrael} width={1400} height={1400} />
+            </a>
+            <p>O idealizador Israel, formado em bacharel e licenciatura de educação física no Centro Universitário São José; está cursando o ensino superior de ciência da computação na Descomplica e formado nos cursos de excel básico; organização e produtividade; técnicas e ferramentas para gestão de projetos e produtos; introdução ao desenvolvimento web; desenvolvimento web HTML5 + CSS3; micro empreendedor individual; e, sargento do exécito brasileiro da brigada de infataria paraquedista, é casado com a Sr Rafaela de Sá.</p>
+          </Bio>
+        </ContainerBio>
+        <ContainerBio>
+          <h1>Rafaela de Sá</h1>
+          <Bio>
+            <p>Bióloga (Bacharel e licenciatura), empresária, especialista em Ciências Ambientais em Áreas Costeiras, pós-graduanda em Biologia Marinha, mergulhadora certificada pela PADI com cursos em ecologia de organismos bentônicos, bioinvasão marinha e ameaças ao ecossistema de costão rochoso, macroinvertebrados bentônicos como ferramenta na avaliação da qualidade ambiental de ecossistemas costeiras, e educação ambiental em ecossistemas costeiros. Possui trabalhos publicados no campo da educação ambiental e ecossistema costeiro, com foco nos Manguezais da Baía de Guanabara. Já foi monitora no Herbário do Museu Nacional (UFRJ), monitora da disciplina de Poluição Marinha (FAMATH) e atuou no Coletivo Jovem durante a 3ª fase do Projeto UÇÁ. Atualmente, produz guias de campo e jogos didáticos, coordena a Seaside Serviços Educacionais e faz parte da Associação dos Protetores do Mar trabalhando como Educadora Ambiental, através do programa socioambiental da Petrobras.</p>
+            <a href="https://www.instagram.com/rafaelasacoelho/" target="_blank">
+              <Image src={fotoRafaela} width={1400} height={1400} />
+            </a>
+          </Bio>
+        </ContainerBio>
       </Idealizadores>
+
+      <Local>
+        <h1>LOCAL</h1>
+        <p>O Instituto Mendes de Sá se encontra na rua Carlos Benedete, 106 - Nova Cidade, Nilópolis</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.0966151485627!2d-43.415389685365575!3d-22.79888363976063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9966af6560f63d%3A0xf12ceb47d0853ded!2sR.%20Carlos%20Benedete%2C%20106%20-%20Nova%20Cidade%2C%20Nil%C3%B3polis%20-%20RJ%2C%2026535-020!5e0!3m2!1spt-BR!2sbr!4v1672312307494!5m2!1spt-BR!2sbr" width="600" height="450" loading="lazy"></iframe>
+      </Local>
+
+      <Parceiros>
+        <h1>PARCEIROS</h1>
+        <a href="https://www.instagram.com/rc_arkhidesign/" target="_blank">
+          <Image src={parceiroArkhi} height={100} width={100} />
+        </a>
+      </Parceiros>
     </HomeContainer>
   )
 }
