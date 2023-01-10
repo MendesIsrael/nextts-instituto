@@ -1,4 +1,4 @@
-import { ContainerMissaoVisao, HomeContainer, MissaoVisao, QuemSomos, Title } from '../styles/pages/home'
+import { Acesso, AcessoEmpresas, Bio, ContainerMissaoVisao, HomeContainer, Idealizadores, MissaoVisao, QuemSomos, Servicos, Title } from '../styles/pages/home'
 
 import Image from 'next/legacy/image'
 import logoInstituto from '../assets/logos/logo-3.png'
@@ -30,6 +30,35 @@ export default function Home() {
           </MissaoVisao>
         </ContainerMissaoVisao>
       </QuemSomos>
+
+      <Servicos>
+        <h1>SERVIÇOS</h1>
+        <h2>PREPARAÇÃO DO CORPO E MENTE DAS PESSOAS.</h2>
+        <Acesso>
+          <AcessoEmpresas>
+            
+              <Image src={logoVigor} width={192} height={192} />
+            
+            <p>A Vigor Body Training está focada em aprimorar a consciência corporal e a coordenação motora, estimulando a melhora da performance de modo respeitoso e saudável, tendo como diferencial a estimulação da correção postural, a restauração do vigor físico e o fortalecimento muscular associado ao cuidado na prevenção de lesões. Utilizaremos as modalidades de Pilates, funcional, hidroginástica e lutas para promover o seu desenvolvimento corporal. Aqui te preparamos para superar os seus limites e alcançar seus objetivos!</p>
+          </AcessoEmpresas>
+          <AcessoEmpresas>
+            
+              <Image src={logoSeaside} width={192} height={192} />
+           
+            <p>A Seaside Serviços Educacionais está focada na divulgação de conhecimentos técnicos e científicos, visando a capacitação intelectual e o enriquecimento de currículo. Através de um corpo docente especializado, oferece eventos, palestras e cursos de curta duração, abordando temas como Educação Ambiental, Ecologia de praias, Macroinvertebrados bentônicos, Biologia e Conservação de Tartarugas Marinhas,  Desenvolvimento Motor, Suporte Básico de Vida e Primeiros Socorros, destinados a qualquer pessoa interessada, seja estudantes, professores ou comunidade em geral. Aqui, a educação acolhe e desperta futuros!</p>
+          </AcessoEmpresas>
+        </Acesso>
+      </Servicos>
+
+      <Idealizadores>
+        <Bio>
+          <h1>Israel Mendes</h1>
+          <a href="https://www.instagram.com/mendesisrael97/" target="_blank">
+            <Image src={fotoIsrael}/>
+          </a>
+          <p>O idealizador Israel, formado em bacharel e licenciatura de educação física no Centro Universitário São José; está cursando o ensino superior de ciência da computação na Descomplica e formado nos cursos de excel básico; organização e produtividade; técnicas e ferramentas para gestão de projetos e produtos; introdução ao desenvolvimento web; desenvolvimento web HTML5 + CSS3; micro empreendedor individual; e, sargento do exécito brasileiro da brigada de infataria paraquedista, é casado com a Sr Rafaela de Sá.</p>
+        </Bio>
+      </Idealizadores>
     </HomeContainer>
   )
 }
