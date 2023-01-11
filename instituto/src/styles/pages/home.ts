@@ -17,7 +17,7 @@ export const HomeContainer = styled('main', {
 });
 
 export const Title = styled('main', {
-  backgroundColor : '$black',
+  backgroundColor : '$green400',
   display         : 'flex',
   justifyContent  : 'center',
 

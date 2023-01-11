@@ -1,12 +1,18 @@
 import Link from "next/link"
-import { Button, Menu } from "../styles/components/navBar"
+import { Menu } from "../styles/components/navBar"
 
 export default function NavBar() {
   return (
     <Menu>
-      <Link href={'/'}><Button>HOME</Button></Link>
-      <Link href={'/vigor'}><Button>VIGOR</Button></Link>
-      <Link href={'/seaside'}><Button>SEASIDE</Button></Link>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/vigor">Vigor</Link>
+        </li>
+        <li>
+          <Link href="/seaside">Seaside</Link>
+        </li>
     </Menu>   
   )
 }
