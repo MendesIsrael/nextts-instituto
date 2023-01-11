@@ -29,3 +29,15 @@ export const Menu = styled('div', {
     },
   }
 });
+
+export const Contato = styled('div', {
+  a: {
+    margin : '0 0.5px',
+    padding: '8px',
+  },
+
+  'a:hover': {
+    backgroundColor : '$black',
+    transition : '1s',
+  }
+})
