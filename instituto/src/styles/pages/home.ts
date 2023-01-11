@@ -58,6 +58,7 @@ export const AcessoEmpresas = styled('a', {
   alignItems      : 'center',
   flexDirection   : 'column',
   display         : 'flex',
+  cursor          : 'pointer',
 });
 
 export const Idealizadores = styled('div', {

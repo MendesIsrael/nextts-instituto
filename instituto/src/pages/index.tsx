@@ -7,11 +7,15 @@ import logoSeaside from '../assets/logos/logo-branca-seaside.png'
 import fotoIsrael from '../assets/fotos/israel.png'
 import fotoRafaela from '../assets/fotos/rafaela.png'
 import parceiroArkhi from '../assets/parceiros/arkhi-design.png'
+import Link from 'next/link'
+
+const videoHome = '../assets/videos/home.mp4'
 
 
 export default function Home() {
   return (
     <HomeContainer>
+      
       <Title>
         <Image src={logoInstituto} width={560} height={560} />
       </Title>
@@ -35,18 +39,18 @@ export default function Home() {
         <h1>SERVIÇOS</h1>
         <h2>PREPARAÇÃO DO CORPO E MENTE DAS PESSOAS.</h2>
         <Acesso>
-          <AcessoEmpresas>
-            
+          <Link href={'/vigor'}  legacyBehavior>
+            <AcessoEmpresas>
               <Image src={logoVigor} width={192} height={192} />
-            
-            <p>A Vigor Body Training está focada em aprimorar a consciência corporal e a coordenação motora, estimulando a melhora da performance de modo respeitoso e saudável, tendo como diferencial a estimulação da correção postural, a restauração do vigor físico e o fortalecimento muscular associado ao cuidado na prevenção de lesões. Utilizaremos as modalidades de Pilates, funcional, hidroginástica e lutas para promover o seu desenvolvimento corporal. Aqui te preparamos para superar os seus limites e alcançar seus objetivos!</p>
-          </AcessoEmpresas>
-          <AcessoEmpresas>
-            
-              <Image src={logoSeaside} width={192} height={192} />
-           
-            <p>A Seaside Serviços Educacionais está focada na divulgação de conhecimentos técnicos e científicos, visando a capacitação intelectual e o enriquecimento de currículo. Através de um corpo docente especializado, oferece eventos, palestras e cursos de curta duração, abordando temas como Educação Ambiental, Ecologia de praias, Macroinvertebrados bentônicos, Biologia e Conservação de Tartarugas Marinhas,  Desenvolvimento Motor, Suporte Básico de Vida e Primeiros Socorros, destinados a qualquer pessoa interessada, seja estudantes, professores ou comunidade em geral. Aqui, a educação acolhe e desperta futuros!</p>
-          </AcessoEmpresas>
+              <p>A Vigor Body Training está focada em aprimorar a consciência corporal e a coordenação motora, estimulando a melhora da performance de modo respeitoso e saudável, tendo como diferencial a estimulação da correção postural, a restauração do vigor físico e o fortalecimento muscular associado ao cuidado na prevenção de lesões. Utilizaremos as modalidades de Pilates, funcional, hidroginástica e lutas para promover o seu desenvolvimento corporal. Aqui te preparamos para superar os seus limites e alcançar seus objetivos!</p>
+            </AcessoEmpresas>
+          </Link>
+          <Link href={'/seaside'}  legacyBehavior>
+            <AcessoEmpresas>
+                <Image src={logoSeaside} width={192} height={192} />
+              <p>A Seaside Serviços Educacionais está focada na divulgação de conhecimentos técnicos e científicos, visando a capacitação intelectual e o enriquecimento de currículo. Através de um corpo docente especializado, oferece eventos, palestras e cursos de curta duração, abordando temas como Educação Ambiental, Ecologia de praias, Macroinvertebrados bentônicos, Biologia e Conservação de Tartarugas Marinhas,  Desenvolvimento Motor, Suporte Básico de Vida e Primeiros Socorros, destinados a qualquer pessoa interessada, seja estudantes, professores ou comunidade em geral. Aqui, a educação acolhe e desperta futuros!</p>
+            </AcessoEmpresas>
+          </Link>
         </Acesso>
       </Servicos>
 
