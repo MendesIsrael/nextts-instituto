@@ -8,10 +8,12 @@ import funcional from '../../assets/modalidades/funcional.jpg'
 import lutas from '../../assets/modalidades/lutas.jpg'
 
 
+
 export default function Vigor() {
   return (
     <>
       <TitleVigor>
+      
         <Image src={logoVigor} width={750} height={560} />
       </TitleVigor>
       <VigorContainer>
@@ -41,6 +43,7 @@ export default function Vigor() {
             </Atividades>
           </Modalidades>
         </DivBoxGreen>
+        <Image src={lutas}/>
       </VigorContainer>
     </>
   )
