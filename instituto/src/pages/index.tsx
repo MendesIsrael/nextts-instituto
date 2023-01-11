@@ -41,7 +41,7 @@ export default function Home() {
         <Acesso>
           <Link href={'/vigor'}  legacyBehavior>
             <AcessoEmpresas>
-              <Image src={logoVigor} width={192} height={192} />
+              <Image src={logoVigor} width={257} height={192} />
               <p>A Vigor Body Training está focada em aprimorar a consciência corporal e a coordenação motora, estimulando a melhora da performance de modo respeitoso e saudável, tendo como diferencial a estimulação da correção postural, a restauração do vigor físico e o fortalecimento muscular associado ao cuidado na prevenção de lesões. Utilizaremos as modalidades de Pilates, funcional, hidroginástica e lutas para promover o seu desenvolvimento corporal. Aqui te preparamos para superar os seus limites e alcançar seus objetivos!</p>
             </AcessoEmpresas>
           </Link>
