@@ -13,17 +13,25 @@ export const HomeContainer = styled('main', {
     textAlign : 'justify',
     padding   : '2rem',
     textIndent: '2.5rem',
-  }
+  },
 });
 
-export const Title = styled('main', {
-  backgroundColor : '$black',
-  display         : 'flex',
-  justifyContent  : 'center',
+export const Title = styled('div', {
+    height:'35rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
 
   img: {
+    zIndex: '10',
+  },
+
+  video: {
+    position: 'absolute',
     objectFit: 'cover',
-  }
+    width:'100%',
+    height: '35rem',
+  },
 });
 
 export const QuemSomos = styled('div', {

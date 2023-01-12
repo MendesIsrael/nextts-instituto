@@ -13,7 +13,7 @@ export default function Vigor() {
   return (
     <>
       <TitleVigor>
-      
+        
         <Image src={logoVigor} width={750} height={560} />
       </TitleVigor>
       <VigorContainer>

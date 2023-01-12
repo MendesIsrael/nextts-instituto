@@ -17,9 +17,10 @@ export default function Home() {
     <HomeContainer>
       
       <Title>
-        <Image src={logoInstituto} width={560} height={560} />
+        <Image src={logoInstituto} width={500} height={500} alt="instituto" />
+        <video src={require('../assets/videos/home.mp4')} autoPlay loop muted />
       </Title>
-
+      
       <QuemSomos>
         <h1>QUEM SOMOS</h1>
         <p>O Instituto Mendes de Sá é uma entidade brasileira privada criada com o propósito de levantar a bandeira do esporte e da educação como ferramenta de transformação, trabalhando o desenvolvimento humano, físico e cognitivo. Com foco no corpo e mente, oferece atividades coletivas, treinos, palestras e cursos com aulas teóricas e práticas nas áreas da saúde e meio ambiente, levando - de forma ética e responsável - a população Nilopolitana a dar novos passos através de domínios técnicos e científicos. Fundado em Maio de 2022, por Israel Mendes e Rafaela de Sá, atende crianças, jovens, adultos e idosos que buscam conhecimento, bem-estar ou melhora da performance.</p>
