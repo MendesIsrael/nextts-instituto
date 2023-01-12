@@ -1,4 +1,4 @@
-import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades } from "../../styles/pages/vigor";
+import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos } from "../../styles/pages/vigor";
 
 import Image from 'next/legacy/image'
 import logoVigor from '../../assets/logos/logo-vigor.png'
@@ -19,7 +19,7 @@ export default function Vigor() {
       <VigorContainer>
         <p>A sua melhor opção na hora de levar uma vida mais saudável</p>
         <DivBoxGreen>
-          <h1>Conheça nossas modalidades</h1>
+          <h1>CONHEÇA NOSSAS MODALIDADES</h1>
           <Modalidades>
             <Atividades>
               <Image src={pilates}/>
@@ -43,7 +43,52 @@ export default function Vigor() {
             </Atividades>
           </Modalidades>
         </DivBoxGreen>
-        <Image src={lutas}/>
+
+        <Pacotes>
+          <h1>PLANOS</h1>
+          <Planos>
+            <ItensPlanos>
+              <TitlePlanos></TitlePlanos>
+              <p>Sem taxas de matrículas</p>
+              <p>Acesso a todas as aulas coletivas</p>
+              <p>Sem restrição de horários</p>
+              <p>Aula experimental</p>
+              <p>Acompanhamento nutricional</p>
+              <p>Massagem de liberação mio fascial</p>
+              <TitlePlanos></TitlePlanos>
+            </ItensPlanos>
+            <PrecoPlanos>
+              <TitlePlanos><p>Pacote<br/>Bronze</p></TitlePlanos>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <TitlePlanos>R$ 100,00/mês</TitlePlanos>
+            </PrecoPlanos>
+            <PrecoPlanos>
+              <TitlePlanos><p>Pacote<br/>Prata</p></TitlePlanos>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <TitlePlanos>R$ 100,00/mês</TitlePlanos>
+            </PrecoPlanos>
+            <PrecoPlanos>
+              <TitlePlanos><p>Pacote<br/>Ouro</p></TitlePlanos>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <p>x</p>
+              <TitlePlanos>R$ 100,00/mês</TitlePlanos>
+            </PrecoPlanos>
+          </Planos>
+        </Pacotes>
       </VigorContainer>
     </>
   )

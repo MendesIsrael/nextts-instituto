@@ -1,5 +1,7 @@
 import { styled } from "..";
 
+
+
 export const VigorContainer = styled('main', {
   backgroundColor : '$black',
   color           : '$white',
@@ -24,8 +26,14 @@ export const DivBoxGreen = styled('div', {
 export const Modalidades = styled('div', {
   display          : 'flex',
   gap              : '1rem',
-  justifyContent  : 'center',
+  justifyContent   : 'center',
+
+  '@bp1': {
+    display:'block',
+  }
 });
+
+
 
 export const Atividades = styled('div', {
   width            : '18rem',
@@ -43,5 +51,54 @@ export const Atividades = styled('div', {
   },
   p:{
     padding        : '10px'
+  }
+});
+
+export const Pacotes = styled('div', {
+  height           : '55rem',
+  color            : '$green100',
+  margin           : '2rem 15%',
+});
+
+export const Planos = styled('div', {
+  display          : 'flex',
+  marginTop        : '2rem',
+  
+  p: {
+    textIndent     : '0',
+    fontSize       : '.9rem',
+    padding        : '0.5rem',
+    borderBottom   : '1px solid green',
+  },
+
+});
+
+export const ItensPlanos = styled('div', {
+  width            : '60rem',
+});
+
+export const PrecoPlanos = styled('div', {
+  width            : '10rem',
+  boxShadow        : '0px 0px 3px white',
+  borderRadius     : '10px',
+  margin           : '0 0.2rem',
+  
+
+  p: {
+    textAlign      : 'center',
+  }
+});
+
+export const TitlePlanos = styled('div', {
+  fontSize         : '1rem',
+  height           : '3.8rem',
+  display          : 'flex',
+  alignItems       : 'center',
+  justifyContent   : 'center',
+  color            : '$white',
+  fontWeight       : '600',
+
+  p: {
+    borderBottom   : '3px solid gray',
   }
 });
