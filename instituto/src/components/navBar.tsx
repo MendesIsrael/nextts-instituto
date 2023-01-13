@@ -8,8 +8,6 @@ import facebook from '../assets/contatos/facebook.png'
 import email from '../assets/contatos/email.png'
 import youtube from '../assets/contatos/youtube.png'
 
-import { List } from "phosphor-react"
-
 
 export default function NavBar() {
   return (
