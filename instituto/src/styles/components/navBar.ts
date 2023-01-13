@@ -40,4 +40,11 @@ export const Contato = styled('div', {
     backgroundColor : '$black',
     transition : '1s',
   }
+});
+
+
+
+
+export const Menu2 = styled('div', {
+  
 })
