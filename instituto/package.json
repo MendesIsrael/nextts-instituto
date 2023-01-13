@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.11.0",
     "@next/font": "13.1.1",
     "@stitches/react": "^1.2.8",
     "@types/node": "18.11.18",
