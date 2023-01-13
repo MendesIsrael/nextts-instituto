@@ -2,35 +2,35 @@ import { styled } from "..";
 
 export const HomeContainer = styled('main', {
   h1: {
-    textAlign: 'center',
+    textAlign     : 'center',
   },
 
   h2: {
-    textAlign: 'center',
+    textAlign     : 'center',
   },
 
   p: {
-    textAlign : 'justify',
-    padding   : '2rem',
-    textIndent: '2.5rem',
+    textAlign     : 'justify',
+    padding       : '2rem',
+    textIndent    : '2.5rem',
   },
 });
 
 export const Title = styled('div', {
-    height:'35rem',
-    display: 'flex',
+    height        :'35rem',
+    display       : 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems    : 'center',
 
   img: {
-    zIndex: '10',
+    zIndex        : '10',
   },
 
   video: {
-    position: 'absolute',
-    objectFit: 'cover',
-    width:'100%',
-    height: '35rem',
+    position      : 'absolute',
+    objectFit     : 'cover',
+    width         :'100%',
+    height        : '35rem',
   },
 });
 
@@ -41,13 +41,13 @@ export const QuemSomos = styled('div', {
 });
 
 export const ContainerMissaoVisao = styled('div', {
-  display : 'flex',
-  margin  : '0px, 8px',
+  display         : 'flex',
+  margin          : '0px, 8px',
 });
 
 export const MissaoVisao = styled('div', {
-  boxShadow : '0px 0px 2px black',
-  width     : '50%',
+  boxShadow       : '0px 0px 2px black',
+  width           : '50%',
 });
 
 export const Servicos = styled('div', {
@@ -55,9 +55,9 @@ export const Servicos = styled('div', {
 });
 
 export const Acesso = styled('div', {
-  display       : 'flex',
-  gap           : '5rem',
-  justifyContent: 'center',
+  display         : 'flex',
+  gap             : '5rem',
+  justifyContent  : 'center',
 });
 
 export const AcessoEmpresas = styled('a', {
@@ -75,22 +75,22 @@ export const Idealizadores = styled('div', {
 });
 
 export const ContainerBio = styled('div', {
-  padding: '1rem',
+  padding         : '1rem',
 });
 
 export const Bio = styled('div', {
-  display     : 'flex',
-  alignItems  : 'center',
+  display         : 'flex',
+  alignItems      : 'center',
 
   p: {
-    width: '450%',
+    width         : '450%',
   },
 
 });
 
 export const Local = styled('div', {
   iframe: {
-    width: '100%',
+    width         : '100%',
   }
 });
 

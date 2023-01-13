@@ -1,27 +1,45 @@
 import { styled } from "..";
 
-
+/*--------------------------------------------------------------------- */
 
 export const VigorContainer = styled('main', {
-  backgroundColor : '$black',
-  color           : '$white',
-  textAlign       : 'center',
+  backgroundColor  : '$black',
+  color            : '$white',
+  textAlign        : 'center',
     
   p: {
-    textAlign     : 'justify',
-    textIndent    : '2.5rem',
+    textAlign      : 'justify',
+    textIndent     : '2.5rem',
   }
-});
-
-export const TitleVigor = styled('div', {
-  backgroundColor : '$transparent',
-  display         : 'flex',
-  justifyContent  : 'center',
 });
 
 export const DivBoxGreen = styled('div', {
   backgroundColor  : '$green500',
 });
+
+/*--------------------------------------------------------------------- */
+
+export const TitleVigor = styled('div', {
+  height           :'35rem',
+  display          : 'flex',
+  justifyContent   : 'center',
+  alignItems       : 'center',
+  
+
+  img: {
+    zIndex         : '-10',
+  },
+
+  video: {
+    position       : 'absolute',
+    objectFit      : 'cover',
+    width          : '100%',
+    height         : '35rem',
+    zIndex         : '-100',
+  },
+});
+
+/*--------------------------------------------------------------------- */
 
 export const Modalidades = styled('div', {
   display          : 'flex',
@@ -29,7 +47,7 @@ export const Modalidades = styled('div', {
   justifyContent   : 'center',
 
   '@bp1': {
-    display:'block',
+    display        :'block',
   }
 });
 
@@ -47,12 +65,14 @@ export const Atividades = styled('div', {
   h1: {
     backgroundColor: '$black',
     color          : '$green200',
-    marginTop: '-4px',
+    marginTop      : '-4px',
   },
   p:{
     padding        : '10px'
   }
 });
+
+/*--------------------------------------------------------------------- */
 
 export const Pacotes = styled('div', {
   height           : '55rem',
@@ -69,7 +89,7 @@ export const Planos = styled('div', {
     fontSize       : '.9rem',
     padding        : '0.5rem',
     borderBottom   : '1px solid green',
-  },
+  }
 
 });
 
@@ -100,5 +120,41 @@ export const TitlePlanos = styled('div', {
 
   p: {
     borderBottom   : '3px solid gray',
+  }
+});
+
+/*--------------------------------------------------------------------- */
+
+export const Adicionais = styled('div', {
+ marginTop         : '5rem',
+});
+
+export const BodyAdicionais = styled('div', {
+  display          : 'flex',
+  gap              : '2rem',
+  marginTop        : '3rem',
+});
+
+export const ItensAdicionais = styled('div', {
+  height           : '23rem',
+  width            : '15rem',
+  borderRadius     : '30px',
+  padding          : '1rem',
+
+  p: {
+    fontSize       : '.8rem',
+    color          : '$white',
+    
+  },
+
+  '&:hover': {
+    boxShadow      : '0px 0px 10px green',
+  }
+});
+export const PreçoAdicionais = styled('div', {
+  p: {
+    fontSize       : '1.3rem',
+    textIndent     : '0',
+    textAlign      : 'center',
   }
 });
