@@ -38,7 +38,7 @@ export default function Home() {
 
       <Servicos>
         <h1>SERVIÇOS</h1>
-        <h2>PREPARAÇÃO DO CORPO E MENTE DAS PESSOAS.</h2>
+        <h2>Preparação do corpo e mente das pessoas.</h2>
         <Acesso>
           <Link href={'/vigor'}  legacyBehavior>
             <AcessoEmpresas>
