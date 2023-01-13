@@ -1,4 +1,4 @@
-import { Acesso, AcessoEmpresas, Bio, ContainerBio, ContainerMissaoVisao, HomeContainer, Idealizadores, Local, MissaoVisao, Parceiros, QuemSomos, Servicos, Title } from '../styles/pages/home'
+import { Acesso, AcessoEmpresas, Bio, BodyNoticias, ContainerBio, ContainerMissaoVisao, HomeContainer, Idealizadores, Local, MissaoVisao, Noticias, Parceiros, QuemSomos, Servicos, Title } from '../styles/pages/home'
 
 import Image from 'next/legacy/image'
 import logoInstituto from '../assets/logos/logo-3.png'
@@ -7,7 +7,14 @@ import logoSeaside from '../assets/logos/logo-branca-seaside.png'
 import fotoIsrael from '../assets/fotos/israel.png'
 import fotoRafaela from '../assets/fotos/rafaela.png'
 import parceiroArkhi from '../assets/parceiros/arkhi-design.png'
+import noticia1 from '../assets/noticias/1.jpg'
+import noticia2 from '../assets/noticias/2.jpg'
+import noticia3 from '../assets/noticias/3.jpg'
+
 import Link from 'next/link'
+import { Carousel } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+
 
 const videoHome = '../assets/videos/home.mp4'
 
@@ -15,12 +22,31 @@ const videoHome = '../assets/videos/home.mp4'
 export default function Home() {
   return (
     <HomeContainer>
-      
       <Title>
         <Image src={logoInstituto} width={500} height={500} alt="instituto" />
         <video src={require('../assets/videos/home.mp4')} autoPlay loop muted />
       </Title>
       
+      <Noticias>
+        <h1>NOTÍCIAS</h1>
+        <BodyNoticias>
+          <Carousel
+            pause="hover" 
+            fade 
+            variant='dark'>
+              <Carousel.Item interval={5000}>
+                <Image src={noticia1} width={500} height={357} />
+              </Carousel.Item>
+              <Carousel.Item interval={5000}>
+                <Image src={noticia2} width={500} height={357} />
+              </Carousel.Item>
+              <Carousel.Item interval={5000}>
+                <Image src={noticia3} width={500} height={357} />
+              </Carousel.Item>
+            </Carousel>
+          </BodyNoticias>
+      </Noticias>
+
       <QuemSomos>
         <h1>QUEM SOMOS</h1>
         <p>O Instituto Mendes de Sá é uma entidade brasileira privada criada com o propósito de levantar a bandeira do esporte e da educação como ferramenta de transformação, trabalhando o desenvolvimento humano, físico e cognitivo. Com foco no corpo e mente, oferece atividades coletivas, treinos, palestras e cursos com aulas teóricas e práticas nas áreas da saúde e meio ambiente, levando - de forma ética e responsável - a população Nilopolitana a dar novos passos através de domínios técnicos e científicos. Fundado em Maio de 2022, por Israel Mendes e Rafaela de Sá, atende crianças, jovens, adultos e idosos que buscam conhecimento, bem-estar ou melhora da performance.</p>

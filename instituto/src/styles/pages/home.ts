@@ -34,7 +34,7 @@ export const HomeContainer = styled('main', {
     }
   },
 });
-
+/*--------------------------------------------------------------------- */
 export const Title = styled('div', {
     height        : '35rem',
     display       : 'flex',
@@ -60,7 +60,16 @@ export const Title = styled('div', {
     },
   },
 });
+/*--------------------------------------------------------------------- */
+export const Noticias = styled('div', {
+  justifyContent  :'center',
+  display         :'grid',
+});
 
+export const BodyNoticias = styled('div', {
+  width           :'30rem',
+});
+/*--------------------------------------------------------------------- */
 export const QuemSomos = styled('div', {
   backgroundColor : '$gray300',
   color           : '$white',
@@ -84,9 +93,8 @@ export const MissaoVisao = styled('div', {
     width         : '100%',
   }
 });
-
+/*--------------------------------------------------------------------- */
 export const Servicos = styled('div', {
-  
 });
 
 export const Acesso = styled('div', {
@@ -106,12 +114,18 @@ export const AcessoEmpresas = styled('a', {
   flexDirection   : 'column',
   display         : 'flex',
   cursor          : 'pointer',
+  textDecoration  :'none',
+  color           :'$black',
+
+  '&:hover': {
+    color         :'$black',
+  },
 
   '@bp1': {
     width         : '100%',
   },
 });
-
+/*--------------------------------------------------------------------- */
 export const Idealizadores = styled('div', {
   backgroundColor : '$gray300',
   color           : '$white',
@@ -140,7 +154,7 @@ export const Bio = styled('div', {
   },
 
 });
-
+/*--------------------------------------------------------------------- */
 export const Local = styled('div', {
   p: {
     textAlign     :'center',
@@ -151,10 +165,11 @@ export const Local = styled('div', {
     width         : '100%',
   }
 });
-
+/*--------------------------------------------------------------------- */
 export const Parceiros = styled('div', {
   height          : '20rem',
   backgroundColor : '$gray300',
   color           : '$white',
   textAlign       : 'center',
 });
+/*--------------------------------------------------------------------- */
