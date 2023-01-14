@@ -1,6 +1,6 @@
 import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, BodyAcademia } from "../../styles/pages/vigor";
 
-import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react";
+import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react"
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -11,6 +11,8 @@ import hidroGinastica from '../../assets/modalidades/hidroGinastica.jpg'
 import funcional from '../../assets/modalidades/funcional.jpg'
 import lutas from '../../assets/modalidades/lutas.jpg'
 import academia1 from '../../assets/academia/academia01.jpg'
+import academia2 from '../../assets/academia/academia02.jpg'
+import academia3 from '../../assets/academia/academia03.jpg'
 
 export default function Vigor() {
   return (
@@ -137,10 +139,10 @@ export default function Vigor() {
                   <Image src={academia1} width={500} height={357} />
                 </Carousel.Item>
                 <Carousel.Item interval={5000}>
-                  <Image src={academia1} width={500} height={357} />
+                  <Image src={academia2} width={500} height={357} />
                 </Carousel.Item>
                 <Carousel.Item interval={5000}>
-                  <Image src={academia1} width={500} height={357} />
+                  <Image src={academia3} width={500} height={357} />
                 </Carousel.Item>
               </Carousel>
             </BodyAcademia>
