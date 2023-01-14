@@ -1,5 +1,9 @@
 import { Acesso, AcessoEmpresas, Bio, BodyNoticias, ContainerBio, ContainerMissaoVisao, HomeContainer, Idealizadores, Local, MissaoVisao, Noticias, Parceiros, QuemSomos, Servicos, Title } from '../styles/pages/home'
 
+import Link from 'next/link'
+import { Carousel } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+
 import Image from 'next/legacy/image'
 import logoInstituto from '../assets/logos/logo-3.png'
 import logoVigor from '../assets/logos/logo-vigor-preto.png'
@@ -10,13 +14,6 @@ import parceiroArkhi from '../assets/parceiros/arkhi-design.png'
 import noticia1 from '../assets/noticias/1.jpg'
 import noticia2 from '../assets/noticias/2.jpg'
 import noticia3 from '../assets/noticias/3.jpg'
-
-import Link from 'next/link'
-import { Carousel } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
-
-
-const videoHome = '../assets/videos/home.mp4'
 
 
 export default function Home() {
