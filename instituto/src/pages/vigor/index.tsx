@@ -30,22 +30,22 @@ export default function Vigor() {
           <Modalidades>
             <Atividades>
               <Image src={pilates}/>
-              <h1>PILATES</h1>
+              <h3>PILATES</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
             </Atividades>
             <Atividades>
             <Image src={hidroGinastica}/>
-              <h1>HIDROGINÁSTICA</h1>
+              <h3>HIDROGINÁSTICA</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
             </Atividades>
             <Atividades>
             <Image src={funcional}/>
-              <h1>FUNCIONAL</h1>
+              <h3>FUNCIONAL</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
             </Atividades>
             <Atividades>
             <Image src={lutas}/>
-              <h1>LUTAS</h1>
+              <h3>LUTAS</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
             </Atividades>
           </Modalidades>
@@ -127,7 +127,6 @@ export default function Vigor() {
           </Adicionais>
         </Pacotes>
 
-        <DivBoxGreen>
           <ImgAcademia>
           <h1>NOTÍCIAS</h1>
             <BodyAcademia>
@@ -147,7 +146,7 @@ export default function Vigor() {
               </Carousel>
             </BodyAcademia>
           </ImgAcademia>
-        </DivBoxGreen>
+
       </VigorContainer>
     </>
   )

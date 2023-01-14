@@ -28,11 +28,9 @@ export const VigorContainer = styled('main', {
   p: {
     textAlign      : 'justify',
     textIndent     : '2.5rem',
-    padding        : '0.5rem',
 
     '@bp1': {
       fontSize     : '0.8rem',
-      padding      : '0.3rem',
     }
   }
 });
@@ -45,7 +43,7 @@ export const DivBoxGreen = styled('div', {
 /*--------------------------------------------------------------------- */
 
 export const TitleVigor = styled('div', {
-  height           :'35rem',
+  height           : '35rem',
   display          : 'flex',
   justifyContent   : 'center',
   alignItems       : 'center',
@@ -93,19 +91,20 @@ export const Atividades = styled('div', {
   boxShadow        : '2px 2px 8px black',
   backgroundColor  : '$white',
   color            : '$black',
-  borderRadius     : '8px',
+  borderRadius     : '.5rem',
   overflow         : 'hidden',
 
-  h1: {
+  h3: {
     backgroundColor: '$black',
     color          : '$green200',
-    marginTop      : '-4px',
+    marginTop      : '-.42rem',
     fontSize       : '1rem',
-    padding        : '.6rem',
+    padding        : '.68rem',
   },
 
   p:{
-    padding        : '10px'
+    fontSize       : '.9rem',
+    padding        : '.7rem'
   }
 });
 
@@ -118,14 +117,14 @@ export const Pacotes = styled('div', {
 
 export const Planos = styled('div', {
   display          : 'flex',
-  margin           : '0 5rem',
   justifyContent   : 'center',
   
   p: {
     textIndent     : '0',
+    textAlign      : 'initial',
     fontSize       : '.9rem',
-    padding        : '0.5rem',
     borderBottom   : '1px solid green',
+    margin         : '0',
   }
 });
 
@@ -141,7 +140,7 @@ export const PrecoPlanos = styled('div', {
   
   p: {
     textAlign      : 'center',
-    padding:'0.456rem',
+    padding        : '0rem',
   }
 });
 
@@ -170,18 +169,19 @@ export const BodyAdicionais = styled('div', {
   justifyContent   : 'center',
 
   h2: {
-    fontSize       : '1.5rem',
+    fontSize       : '1.8rem',
   },
 
 });
 
 export const ItensAdicionais = styled('div', {
-  height           : '22rem',
+  height           : '24rem',
   width            : '14rem',
   borderRadius     : '30px',
   padding          : '1rem',
+  boxSizing        : 'content-box',
+  boxShadow      : '0px 0px 2px white',
 
-  
   p: {
     fontSize       : '.8rem',
     color          : '$white',
@@ -202,10 +202,10 @@ export const PreçoAdicionais = styled('div', {
   }
 });
 /*--------------------------------------------------------------------- */
-export const BodyAcademia = styled('div', {
-
-});
 
 export const ImgAcademia = styled('div', {
-
+  backgroundColor  : '$green500',
+});
+export const BodyAcademia = styled('div', {
+  
 });
