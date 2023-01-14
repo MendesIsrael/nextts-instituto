@@ -42,9 +42,3 @@ export const Contato = styled('div', {
   }
 });
 
-
-
-
-export const Menu2 = styled('div', {
-  
-})

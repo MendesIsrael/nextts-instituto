@@ -1,8 +1,9 @@
-import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, BodyAcademia } from "../../styles/pages/vigor";
+import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, BodyAcademia, MoreInformation } from "../../styles/pages/vigor";
 
 import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react"
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import { AlertDialogPilates } from "../../components/alertDialog";
 
 import Image from 'next/legacy/image'
 import logoVigor from '../../assets/logos/logo-vigor.png'
@@ -14,6 +15,7 @@ import academia1 from '../../assets/academia/academia01.jpg'
 import academia2 from '../../assets/academia/academia02.jpg'
 import academia3 from '../../assets/academia/academia03.jpg'
 
+
 export default function Vigor() {
   return (
     <>
@@ -21,10 +23,12 @@ export default function Vigor() {
         <Image src={logoVigor} width={670} height={500} />
         <video src={require('../../assets/videos/vigor.mp4')} autoPlay loop muted />
       </TitleVigor>
+
       <VigorContainer>
         <TextMotivacional>
           <p>A sua melhor opção na hora de levar uma vida mais saudável</p>
         </TextMotivacional>
+
         <DivBoxGreen>
           <h1>CONHEÇA NOSSAS MODALIDADES</h1>
           <Modalidades>
@@ -32,6 +36,9 @@ export default function Vigor() {
               <Image src={pilates}/>
               <h3>PILATES</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
+              <MoreInformation>
+                <AlertDialogPilates />
+              </MoreInformation>
             </Atividades>
             <Atividades>
             <Image src={hidroGinastica}/>
