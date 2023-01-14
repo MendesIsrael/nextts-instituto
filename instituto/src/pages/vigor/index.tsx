@@ -3,7 +3,7 @@ import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacot
 import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react"
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import { AlertDialogPilates } from "../../components/alertDialog";
+import { AlertDialogFuncional, AlertDialogHidro, AlertDialogLutas, AlertDialogPilates } from "../../components/alertDialog";
 
 import Image from 'next/legacy/image'
 import logoVigor from '../../assets/logos/logo-vigor.png'
@@ -44,16 +44,25 @@ export default function Vigor() {
             <Image src={hidroGinastica}/>
               <h3>HIDROGINÁSTICA</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
+              <MoreInformation>
+                <AlertDialogHidro />
+              </MoreInformation>
             </Atividades>
             <Atividades>
             <Image src={funcional}/>
               <h3>FUNCIONAL</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
+              <MoreInformation>
+                <AlertDialogFuncional />
+              </MoreInformation>
             </Atividades>
             <Atividades>
             <Image src={lutas}/>
               <h3>LUTAS</h3>
               <p>Buscamos sempre desenvolver o seu potencial máximo - melhorando o condicionamento físico geral, a consciência corporal e a coordenação motora, prevenindo e reduzindo os ricos de lesões e o alívio de dores crônicas.</p>
+              <MoreInformation>
+                <AlertDialogLutas />
+              </MoreInformation>
             </Atividades>
           </Modalidades>
         </DivBoxGreen>
@@ -135,7 +144,6 @@ export default function Vigor() {
         </Pacotes>
 
           <ImgAcademia>
-          <h1>NOTÍCIAS</h1>
             <BodyAcademia>
               <Carousel
               pause="hover" 
