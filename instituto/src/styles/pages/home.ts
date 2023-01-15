@@ -49,7 +49,7 @@ export const Title = styled('div', {
     zIndex        : '10',
   },
 
-  video: {
+    video: {
     position      : 'absolute',
     objectFit     : 'cover',
     width         : '100%',
@@ -60,37 +60,64 @@ export const Title = styled('div', {
     },
   },
 });
+
+export const ImagemBox = styled('div', {
+  width            : '25rem',
+  height           : '25rem',
+
+  '@bp1': {
+    height         : '20rem',
+    width          : '20rem',
+  },
+});
 /*--------------------------------------------------------------------- */
 export const Noticias = styled('div', {
-  justifyContent  :'center',
-  display         :'grid',
+  justifyContent  : 'center',
+  display         : 'grid',
+  height          : '28rem',
+
+  '@bp2': {
+    height        : '20rem',
+  },
 });
 
 export const BodyNoticias = styled('div', {
-  width           :'30rem',
+  width           : '30rem',
+
+  '@bp2': {
+    height        : '15rem',
+    width         : '20rem',
+  },
 });
 /*--------------------------------------------------------------------- */
 export const QuemSomos = styled('div', {
   backgroundColor : '$gray300',
   color           : '$white',
+
+  '@bp2': {
+    
+    p:{
+      padding     : '1rem',
+      margin      : '0rem',
+    }
+  }
 });
 
 export const ContainerMissaoVisao = styled('div', {
   display         : 'flex',
   margin          : '0px, 8px',
-
-  '@bp1': {
-    display       : 'block',
-    margin        : '0px',
-  }
 });
 
 export const MissaoVisao = styled('div', {
   boxShadow       : '0px 0px 2px black',
   width           : '50%',
 
-  '@bp1': {
+  '@bp2': {
     width         : '100%',
+    
+    p: {
+      padding     : '0.5rem',
+    }
   }
 });
 /*--------------------------------------------------------------------- */
@@ -102,8 +129,13 @@ export const Acesso = styled('div', {
   gap             : '5rem',
   justifyContent  : 'center',
 
-  '@bp1': {
-    display       : 'block',
+  '@bp2': {
+    display       : 'grid',
+    gap           : '1rem',
+
+    p:{
+      padding     : '.3rem 1rem',
+    }
   },
 });
 
@@ -114,17 +146,27 @@ export const AcessoEmpresas = styled('a', {
   flexDirection   : 'column',
   display         : 'flex',
   cursor          : 'pointer',
-  textDecoration  :'none',
-  color           :'$black',
+  textDecoration  : 'none',
+  color           : '$black',
 
   '&:hover': {
-    color         :'$black',
+    color         : '$black',
   },
 
-  '@bp1': {
+  '@bp2': {
     width         : '100%',
   },
 });
+
+export const ImagemBox2 = styled('div',{
+  height          : '10rem',
+  width           : '10rem',
+
+  '@bp1': {
+    height        : '5rem',
+    width         : '5rem',
+  },
+})
 /*--------------------------------------------------------------------- */
 export const Idealizadores = styled('div', {
   backgroundColor : '$gray300',
@@ -134,7 +176,7 @@ export const Idealizadores = styled('div', {
 export const ContainerBio = styled('div', {
   padding         : '1rem',
 
-  '@bp1': {
+  '@bp2': {
     padding       : '0',
   },
 });
@@ -143,21 +185,30 @@ export const Bio = styled('div', {
   display         : 'flex',
   alignItems      : 'center',
 
+  '@bp2': {
+    display:'grid', 
+    justifyContent      : 'center', 
+  },
+
   p: {
     width         : '450%',
-  },
-
-  a: {
-    '@bp1': {
-      display     : 'none',
+    
+    '@bp2': {
+      width         : '100%',
+      padding:'1rem',  
     },
   },
-
 });
+
+export const ImagemBox3 = styled('div',{
+  
+});
+
+
 /*--------------------------------------------------------------------- */
 export const Local = styled('div', {
   p: {
-    textAlign     :'center',
+    textAlign     : 'center',
     textIndent    : '0',
   },
   

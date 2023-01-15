@@ -1,4 +1,4 @@
-import { Acesso, AcessoEmpresas, Bio, BodyNoticias, ContainerBio, ContainerMissaoVisao, HomeContainer, Idealizadores, Local, MissaoVisao, Noticias, Parceiros, QuemSomos, Servicos, Title } from '../styles/pages/home'
+import { Acesso, AcessoEmpresas, Bio, BodyNoticias, ContainerBio, ContainerMissaoVisao, HomeContainer, Idealizadores, ImagemBox, ImagemBox2, ImagemBox3, Local, MissaoVisao, Noticias, Parceiros, QuemSomos, Servicos, Title } from '../styles/pages/home'
 
 import Link from 'next/link'
 import { Carousel } from 'react-bootstrap'
@@ -20,7 +20,9 @@ export default function Home() {
   return (
     <HomeContainer>
       <Title>
-        <Image src={logoInstituto} width={500} height={500} alt="instituto" />
+        <ImagemBox>
+          <Image src={logoInstituto}  layout="responsive" alt="instituto" />
+        </ImagemBox>
         <video src={require('../assets/videos/home.mp4')} autoPlay loop muted />
       </Title>
       
@@ -32,13 +34,13 @@ export default function Home() {
             fade 
             variant='dark'>
               <Carousel.Item interval={5000}>
-                <Image src={noticia1} width={500} height={357} />
+                <Image src={noticia1} width={500} height={357} layout='responsive' />
               </Carousel.Item>
               <Carousel.Item interval={5000}>
-                <Image src={noticia2} width={500} height={357} />
+                <Image src={noticia2} width={500} height={357} layout='responsive' />
               </Carousel.Item>
               <Carousel.Item interval={5000}>
-                <Image src={noticia3} width={500} height={357} />
+                <Image src={noticia3} width={500} height={357} layout='responsive' />
               </Carousel.Item>
             </Carousel>
           </BodyNoticias>
@@ -65,13 +67,17 @@ export default function Home() {
         <Acesso>
           <Link href={'/vigor'}  legacyBehavior>
             <AcessoEmpresas>
-              <Image src={logoVigor} width={257} height={192} />
+              <ImagemBox2>
+                <Image src={logoVigor} layout="responsive" />
+              </ImagemBox2>
               <p>A Vigor Body Training está focada em aprimorar a consciência corporal e a coordenação motora, estimulando a melhora da performance de modo respeitoso e saudável, tendo como diferencial a estimulação da correção postural, a restauração do vigor físico e o fortalecimento muscular associado ao cuidado na prevenção de lesões. Utilizaremos as modalidades de Pilates, funcional, hidroginástica e lutas para promover o seu desenvolvimento corporal. Aqui te preparamos para superar os seus limites e alcançar seus objetivos!</p>
             </AcessoEmpresas>
           </Link>
           <Link href={'/seaside'}  legacyBehavior>
             <AcessoEmpresas>
+              <ImagemBox2>
                 <Image src={logoSeaside} width={192} height={192} />
+              </ImagemBox2>
               <p>A Seaside Serviços Educacionais está focada na divulgação de conhecimentos técnicos e científicos, visando a capacitação intelectual e o enriquecimento de currículo. Através de um corpo docente especializado, oferece eventos, palestras e cursos de curta duração, abordando temas como Educação Ambiental, Ecologia de praias, Macroinvertebrados bentônicos, Biologia e Conservação de Tartarugas Marinhas,  Desenvolvimento Motor, Suporte Básico de Vida e Primeiros Socorros, destinados a qualquer pessoa interessada, seja estudantes, professores ou comunidade em geral. Aqui, a educação acolhe e desperta futuros!</p>
             </AcessoEmpresas>
           </Link>
@@ -83,7 +89,9 @@ export default function Home() {
           <h1>Israel Mendes</h1>
           <Bio>
             <a href="https://www.instagram.com/mendesisrael97/" target="_blank">
-              <Image src={fotoIsrael} width={1400} height={1400} />
+              <ImagemBox3>
+                <Image src={fotoIsrael} />
+              </ImagemBox3>
             </a>
             <p>O idealizador Israel, formado em bacharel e licenciatura de educação física no Centro Universitário São José; está cursando o ensino superior de ciência da computação na Descomplica e formado nos cursos de excel básico; organização e produtividade; técnicas e ferramentas para gestão de projetos e produtos; introdução ao desenvolvimento web; desenvolvimento web HTML5 + CSS3; micro empreendedor individual; e, sargento do exécito brasileiro da brigada de infataria paraquedista, é casado com a Sr Rafaela de Sá.</p>
           </Bio>
@@ -93,7 +101,9 @@ export default function Home() {
           <Bio>
             <p>Bióloga (Bacharel e licenciatura), empresária, especialista em Ciências Ambientais em Áreas Costeiras, pós-graduanda em Biologia Marinha, mergulhadora certificada pela PADI com cursos em ecologia de organismos bentônicos, bioinvasão marinha e ameaças ao ecossistema de costão rochoso, macroinvertebrados bentônicos como ferramenta na avaliação da qualidade ambiental de ecossistemas costeiras, e educação ambiental em ecossistemas costeiros. Possui trabalhos publicados no campo da educação ambiental e ecossistema costeiro, com foco nos Manguezais da Baía de Guanabara. Já foi monitora no Herbário do Museu Nacional (UFRJ), monitora da disciplina de Poluição Marinha (FAMATH) e atuou no Coletivo Jovem durante a 3ª fase do Projeto UÇÁ. Atualmente, produz guias de campo e jogos didáticos, coordena a Seaside Serviços Educacionais e faz parte da Associação dos Protetores do Mar trabalhando como Educadora Ambiental, através do programa socioambiental da Petrobras.</p>
             <a href="https://www.instagram.com/rafaelasacoelho/" target="_blank">
-              <Image src={fotoRafaela} width={1400} height={1400} />
+              <ImagemBox3>
+                <Image src={fotoRafaela} />
+              </ImagemBox3>
             </a>
           </Bio>
         </ContainerBio>

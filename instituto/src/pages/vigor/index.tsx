@@ -20,7 +20,7 @@ export default function Vigor() {
   return (
     <>
       <TitleVigor>
-        <Image src={logoVigor} width={670} height={500} />
+        <Image src={logoVigor} width={536} height={400} />
         <video src={require('../../assets/videos/vigor.mp4')} autoPlay loop muted />
       </TitleVigor>
 

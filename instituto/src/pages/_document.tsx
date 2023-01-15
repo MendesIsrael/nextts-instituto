@@ -5,6 +5,7 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <Head>
+        <title>Instituto Mendes de Sá</title>
         <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
       </Head>
       <body>

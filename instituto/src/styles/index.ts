@@ -12,6 +12,7 @@ export const {
 } = createStitches({
   media: {
     bp1: '(max-width: 400px)',
+    bp2: '(max-width: 600px)',
   },
   theme: {
     colors: {
