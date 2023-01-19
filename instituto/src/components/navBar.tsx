@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Contato, Menu } from "../styles/components/navBar"
+import { Contato, Menu, NavPages } from "../styles/components/navBar"
 
 import Image from 'next/legacy/image'
 import whatsapp from '../assets/contatos/whatsapp.png'
@@ -12,7 +12,7 @@ import youtube from '../assets/contatos/youtube.png'
 export default function NavBar() {
   return (
     <Menu>
-      
+      <NavPages>
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -22,7 +22,7 @@ export default function NavBar() {
         <li>
           <Link href="/seaside">Seaside</Link>
         </li>
-      
+      </NavPages>
       <Contato>
         <a href="#" target="_blank">
           <Image src={whatsapp} width={16} height={16} />
