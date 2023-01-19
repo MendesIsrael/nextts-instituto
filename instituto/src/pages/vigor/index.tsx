@@ -1,4 +1,4 @@
-import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, BodyAcademia, MoreInformation } from "../../styles/pages/vigor";
+import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, MoreInformation } from "../../styles/pages/vigor";
 
 import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react"
 import { Carousel } from 'react-bootstrap'
@@ -14,6 +14,7 @@ import lutas from '../../assets/modalidades/lutas.jpg'
 import academia1 from '../../assets/academia/academia01.jpg'
 import academia2 from '../../assets/academia/academia02.jpg'
 import academia3 from '../../assets/academia/academia03.jpg'
+import { BodyNoticias } from "../../styles/pages/home";
 
 
 export default function Vigor() {
@@ -88,7 +89,7 @@ export default function Vigor() {
               <p><X color="red"/></p>
               <p><X color="red"/></p>
               <p><X color="red"/></p>
-              <TitlePlanos>R$ 100,00/mês</TitlePlanos>
+              <TitlePlanos>R$ 100,00<br />por mês</TitlePlanos>
             </PrecoPlanos>
             <PrecoPlanos>
               <TitlePlanos><p>Pacote<br/>Prata</p></TitlePlanos>
@@ -98,7 +99,7 @@ export default function Vigor() {
               <p><X color="red"/></p>
               <p><X color="red"/></p>
               <p><X color="red"/></p>
-              <TitlePlanos>R$ 100,00/mês</TitlePlanos>
+              <TitlePlanos>R$ 100,00<br />por mês</TitlePlanos>
             </PrecoPlanos>
             <PrecoPlanos>
               <TitlePlanos><p>Pacote<br/>Ouro</p></TitlePlanos>
@@ -108,7 +109,7 @@ export default function Vigor() {
               <p><Check/></p>
               <p><Check/></p>
               <p><Check/></p>
-              <TitlePlanos>R$ 100,00/mês</TitlePlanos>
+              <TitlePlanos>R$ 100,00<br />por mês</TitlePlanos>
             </PrecoPlanos>
           </Planos>
 
@@ -144,7 +145,7 @@ export default function Vigor() {
         </Pacotes>
 
           <ImgAcademia>
-            <BodyAcademia>
+            <BodyNoticias>
               <Carousel
               pause="hover" 
               fade 
@@ -159,7 +160,7 @@ export default function Vigor() {
                   <Image src={academia3} width={500} height={357} />
                 </Carousel.Item>
               </Carousel>
-            </BodyAcademia>
+            </BodyNoticias>
           </ImgAcademia>
 
       </VigorContainer>
