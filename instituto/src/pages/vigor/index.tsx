@@ -1,5 +1,6 @@
 import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, MoreInformation } from "../../styles/pages/vigor";
 
+import Link from "next/link"
 import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react"
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -15,6 +16,7 @@ import academia1 from '../../assets/academia/academia01.jpg'
 import academia2 from '../../assets/academia/academia02.jpg'
 import academia3 from '../../assets/academia/academia03.jpg'
 import { BodyNoticias } from "../../styles/pages/home";
+import { Login } from "../../components/login";
 
 
 export default function Vigor() {
@@ -23,6 +25,7 @@ export default function Vigor() {
       <TitleVigor>
         <Image src={logoVigor} width={536} height={400} />
         <video src={require('../../assets/videos/vigor.mp4')} autoPlay loop muted />
+        <Login color="green"><Link href="/vigor/loginVigor">LOGIN</Link></Login>
       </TitleVigor>
 
       <VigorContainer>

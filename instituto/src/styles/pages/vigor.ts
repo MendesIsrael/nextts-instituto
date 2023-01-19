@@ -46,8 +46,7 @@ export const TitleVigor = styled('div', {
   height           : '35rem',
   display          : 'flex',
   justifyContent   : 'center',
-  alignItems       : 'center',
-  
+  alignItems       : 'center',  
 
   img: {
     zIndex         : '-10',
