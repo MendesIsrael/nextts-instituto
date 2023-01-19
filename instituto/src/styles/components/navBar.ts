@@ -45,6 +45,7 @@ export const Contato = styled('div', {
   a: {
     margin            : '0 0.5px',
     padding           : '8px',
+    borderRadius      : '1rem',
   },
 
   'a:hover': {

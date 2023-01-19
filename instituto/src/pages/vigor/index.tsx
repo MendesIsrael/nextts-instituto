@@ -1,7 +1,7 @@
 import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, MoreInformation } from "../../styles/pages/vigor";
 
 import Link from "next/link"
-import { YinYang, Barbell, ForkKnife, Check, X } from "phosphor-react"
+import { YinYang, Barbell, ForkKnife, Check, X, UserCircle } from "phosphor-react"
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import { AlertDialogFuncional, AlertDialogHidro, AlertDialogLutas, AlertDialogPilates } from "../../components/alertDialog";
@@ -25,7 +25,7 @@ export default function Vigor() {
       <TitleVigor>
         <Image src={logoVigor} width={536} height={400} />
         <video src={require('../../assets/videos/vigor.mp4')} autoPlay loop muted />
-        <Login color="green"><Link href="/vigor/loginVigor">LOGIN</Link></Login>
+        <Login color="green"><Link href="/vigor/loginVigor">LOGIN<UserCircle size={25}/></Link></Login>
       </TitleVigor>
 
       <VigorContainer>
