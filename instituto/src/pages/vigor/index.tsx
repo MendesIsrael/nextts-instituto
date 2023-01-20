@@ -25,7 +25,9 @@ export default function Vigor() {
       <TitleVigor>
         <Image src={logoVigor} width={536} height={400} />
         <video src={require('../../assets/videos/vigor.mp4')} autoPlay loop muted />
-        <Login color="green"><Link href="/vigor/loginVigor">LOGIN<UserCircle size={25}/></Link></Login>
+        <Link href={'/vigor/loginVigor'} legacyBehavior>
+          <Login color="green">LOGIN<UserCircle size={30}/></Login>
+        </Link>
       </TitleVigor>
 
       <VigorContainer>

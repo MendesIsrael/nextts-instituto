@@ -1,18 +1,22 @@
 import { styled } from "../styles";
 
 export const Login = styled('div', {
+  display        : 'flex',
   position       : 'absolute',
-  margin         : '-25rem 1rem auto 90%',
+  margin         : '-27rem 1rem auto 90%',
   height         : '2rem',
   width          : '7rem',
   textDecoration : 'none',
   fontWeight     : 'bolder',
   borderRadius   : '.5rem',
-  textAlign      : 'center',
+  justifyContent : 'center',
+  alignItems     : 'center',
   fontSize       : '1rem',
-  paddingTop     : '.2rem',
+  paddingTop     : '.1rem',
+  gap            : '.3rem',
   boxShadow      : '2px 2px 5px rgba(0, 0, 0, 0.301)',
   color          : '$white',
+  cursor         : 'pointer',
 
   variants: {
     color: {
