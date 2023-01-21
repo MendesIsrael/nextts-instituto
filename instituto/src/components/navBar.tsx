@@ -1,5 +1,5 @@
 import Link from "next/link"
-//import { Contato, Menu, NavPages } from "../styles/components/navBar"
+import { Contato, Menu, NavPages } from "../styles/components/navBar"
 
 import Image from 'next/legacy/image'
 import whatsapp from '../assets/contatos/whatsapp.png'
@@ -8,10 +8,11 @@ import facebook from '../assets/contatos/facebook.png'
 import email from '../assets/contatos/email.png'
 import youtube from '../assets/contatos/youtube.png'
 
-import { List } from "phosphor-react"
-import { styled } from "../styles"
-
-/*<Menu>   
+   
+export default function NavBar() {
+  
+  return (
+    <Menu>   
       <NavPages>
         <li>
           <Link href="/">Home</Link>
@@ -40,54 +41,7 @@ import { styled } from "../styles"
           <Image src={youtube} width={18} height={16} />
         </a>
       </Contato>
-    </Menu>*/   
-
-    const MenuBtn = styled('div', {
-      display:'flex',
-      justifyContent:'flex-end',
-    });
-    
-    const Menu = styled('div', {
-      height:'60px',
-      borderBottom:'.5px solid black',
-      display:'flex',
-      alignItems:'center',
-      cursor:'pointer',
-    });
-    
-    const Container = styled('div', {
-      width:'250px',
-      height:'300px',
-      backgroundColor:'$blue100',
-    
-      '&.ContainerOculto': {
-        width:'60px',
-    
-        [`& ${Menu}`]: {
-          display: 'none',
-        },
-      },
-    });
-
-export default function NavBar() {
-  
-  return (
-    <>
-    <Container className="Container">
-      <MenuBtn>
-        <List className="list"/>
-      </MenuBtn>
-      <Menu>
-        <Link href="/">Home</Link>
-      </Menu>
-      <Menu>
-        <Link href="/vigor">Vigor</Link>
-      </Menu>
-      <Menu>
-        <Link href="/seaside">Seaside</Link>
-      </Menu>
-    </Container>
-    </>
+    </Menu>
   )
 }
 

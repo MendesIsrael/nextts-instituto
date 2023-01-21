@@ -1,6 +1,6 @@
 import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, MoreInformation } from "../../styles/pages/vigor";
 import { BodyNoticias } from "../../styles/pages/home";
-import { Login } from "../../components/login";
+import { Login } from "../../components/buttonlogin";
 
 import Link from "next/link"
 import { YinYang, Barbell, ForkKnife, Check, X, UserCircle } from "phosphor-react"
