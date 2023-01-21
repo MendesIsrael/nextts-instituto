@@ -1,4 +1,6 @@
 import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, MoreInformation } from "../../styles/pages/vigor";
+import { BodyNoticias } from "../../styles/pages/home";
+import { Login } from "../../components/login";
 
 import Link from "next/link"
 import { YinYang, Barbell, ForkKnife, Check, X, UserCircle } from "phosphor-react"
@@ -15,8 +17,7 @@ import lutas from '../../assets/modalidades/lutas.jpg'
 import academia1 from '../../assets/academia/academia01.jpg'
 import academia2 from '../../assets/academia/academia02.jpg'
 import academia3 from '../../assets/academia/academia03.jpg'
-import { BodyNoticias } from "../../styles/pages/home";
-import { Login } from "../../components/login";
+
 
 
 export default function Vigor() {

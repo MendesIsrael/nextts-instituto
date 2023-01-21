@@ -1,6 +1,6 @@
 import { styled } from "..";
 
-export const Menu = styled('div', {
+/*export const Menu = styled('div', {
   position            : 'absolute',
   width               : '100%',
   height              : '3rem',
@@ -52,5 +52,5 @@ export const Contato = styled('div', {
     backgroundColor   : '$black',
     transition        : '1s',
   }
-});
+});*/
 
