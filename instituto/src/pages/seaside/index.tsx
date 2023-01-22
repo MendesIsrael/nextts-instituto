@@ -59,34 +59,44 @@ export default function Seaside() {
         <h1>MODALIDADE</h1>
         <BodyModalidade>
           <BoxModalidade>
-            <Mod color={'blue5'}>
-              <Student size={50}/>
-              <h3>Curso presenciais</h3>
-            </Mod>
-            <Mod color={'blue3'}>
-              <div>
-              <ChalkboardTeacher size={50}/>
-              </div>
-              <h3>Palestras</h3>
-            </Mod>
-            <Mod color={'blue1'}>
-              <Rss size={50}/>
-              <h3>Cursos EaD</h3>
-            </Mod>
+            <a href="#">
+              <Mod color={'blue5'}>
+                <Student size={50}/>
+                <h3>Curso presenciais</h3>
+              </Mod>
+            </a>
+            <a href="#">
+              <Mod color={'blue3'}>
+                <ChalkboardTeacher size={50}/>
+                <h3>Palestras</h3>
+              </Mod>
+            </a>
+            <a href="#">
+              <Mod color={'blue1'}>
+                <Rss size={50}/>
+                <h3>Cursos EaD</h3>
+              </Mod>
+            </a>
           </BoxModalidade>
           <BoxModalidade2>
-            <Mod color={'blue2'}>
-              <Books size={50} />
-              <h3>Livros digitais</h3>
-            </Mod>
-            <Mod color={'blue4'}>
-              <UsersThree size={50}/>
-              <h3>Eventos</h3>
-            </Mod>
-            <Mod color={'blue3'}>
-              <MonitorPlay size={50}/>
-              <h3>Canal no YouTube</h3>
-            </Mod>
+            <a href="#">
+              <Mod color={'blue2'}>
+                <Books size={50} />
+                <h3>Livros digitais</h3>
+              </Mod>
+            </a>
+            <a href="#">
+              <Mod color={'blue4'}>
+                <UsersThree size={50}/>
+                <h3>Eventos</h3>
+              </Mod>
+            </a>
+            <a href="https://www.youtube.com/@seasideservicosea" target="_blank">
+              <Mod color={'blue3'}>
+                <MonitorPlay size={50}/>
+                <h3>Canal no YouTube</h3>
+              </Mod>
+            </a>
           </BoxModalidade2>
         </BodyModalidade>
       </Modalidades>
@@ -97,6 +107,9 @@ export default function Seaside() {
       
       <Apoio>
         <h1>APOIO</h1>
+        <Link href={'https://sandbox.pagseguro.uol.com.br'} legacyBehavior>
+          <a>oi</a>
+        </Link>
       </Apoio>
     </SeasideContainer>
   )

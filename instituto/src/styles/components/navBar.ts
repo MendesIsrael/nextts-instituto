@@ -16,6 +16,10 @@ export const NavPages = styled('div', {
   display             : 'flex',
   position            : 'relative',
   left                : '42%',
+
+  '@bp2': {
+    left                : '1%',
+  },
   
 
   li: {
@@ -41,6 +45,10 @@ export const NavPages = styled('div', {
 export const Contato = styled('div', {
   position            : 'relative',
   marginRight         : '1rem',
+
+  '@bp2': {
+    marginRight       : '0',
+  },
   
   a: {
     margin            : '0 0.5px',

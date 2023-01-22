@@ -18,6 +18,10 @@ export const Login = styled('div', {
   color          : '$white',
   cursor         : 'pointer',
 
+  '@bp2': {
+    margin       : '-27rem 5rem auto 90%',
+  },
+
   variants: {
     color: {
       green: {

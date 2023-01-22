@@ -6,7 +6,6 @@ import whatsapp from '../assets/contatos/whatsapp.png'
 import instagram from '../assets/contatos/instagram.png'
 import facebook from '../assets/contatos/facebook.png'
 import email from '../assets/contatos/email.png'
-import youtube from '../assets/contatos/youtube.png'
 
    
 export default function NavBar() {
@@ -36,9 +35,6 @@ export default function NavBar() {
         </a>
         <a href="mailto:institutomendesa@outlook.com" target="_blank">
         <Image src={email} width={18} height={16} />
-        </a>
-        <a href="https://www.youtube.com/@institutomendesdesa/playlists" target="_blank">
-          <Image src={youtube} width={18} height={16} />
         </a>
       </Contato>
     </Menu>

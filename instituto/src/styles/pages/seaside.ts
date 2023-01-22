@@ -89,19 +89,27 @@ export const BodyModalidade = styled('div', {
   gap               : '1rem',
   justifyContent    : 'center',
   alignItems        : 'center',
+  padding           : '1rem',
 });
 
 export const BoxModalidade = styled('div', {
   display           : 'flex',
   gap               : '1rem',
+
+  a:{
+    textDecoration    : 'none',
+    color             : '$white',
+  },
 });
 
 export const BoxModalidade2 = styled('div', {
   display           : 'flex',
-  justifyContent    : 'center',
-  alignItems        : 'center',
   gap               : '1rem',
-  marginBottom      : '1rem',
+
+  a:{
+    textDecoration    : 'none',
+    color             : '$white',
+  },
 });
 
 export const Mod = styled('div', {
@@ -111,7 +119,6 @@ export const Mod = styled('div', {
   alignItems        : 'center',
   justifyContent    : 'center',
   textAlign         : 'center',
-  cursor            : 'pointer',
 
   svg: {
     margin          : '2rem 0 3.5rem 0',
