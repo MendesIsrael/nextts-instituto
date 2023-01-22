@@ -37,7 +37,7 @@ export default function NavBar() {
         <a href="mailto:institutomendesa@outlook.com" target="_blank">
         <Image src={email} width={18} height={16} />
         </a>
-        <a href="#" target="_blank">
+        <a href="https://www.youtube.com/@institutomendesdesa/playlists" target="_blank">
           <Image src={youtube} width={18} height={16} />
         </a>
       </Contato>

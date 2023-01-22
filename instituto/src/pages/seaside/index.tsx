@@ -1,10 +1,10 @@
-import { BodyModalidade, BoxModalidade, BoxModalidade2, Mod, Modalidades, SeasideContainer, TextExplicativo, TitleSeaside } from "../../styles/pages/seaside";
+import { Apoio, BodyModalidade, BoxModalidade, BoxModalidade2, Loja, Mod, Modalidades, SeasideContainer, TextExplicativo, TitleSeaside } from "../../styles/pages/seaside";
 import { BodyNoticias, Noticias } from "../../styles/pages/home";
 import { Login } from "../../components/buttonlogin";
 import Link from "next/link";
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import { UserCircle } from "phosphor-react";
+import { Books, ChalkboardTeacher, MonitorPlay, Rss, Student, UserCircle, UsersThree } from "phosphor-react";
 
 import Image from 'next/legacy/image'
 import logoSeaside from '../../assets/logos/logo-preta-seaside.png'
@@ -60,26 +60,44 @@ export default function Seaside() {
         <BodyModalidade>
           <BoxModalidade>
             <Mod color={'blue5'}>
-              Curso presenciais
-              Palestras
+              <Student size={50}/>
+              <h3>Curso presenciais</h3>
             </Mod>
             <Mod color={'blue3'}>
-              Cursos EaD
-              Livros digitais
+              <div>
+              <ChalkboardTeacher size={50}/>
+              </div>
+              <h3>Palestras</h3>
+            </Mod>
+            <Mod color={'blue1'}>
+              <Rss size={50}/>
+              <h3>Cursos EaD</h3>
             </Mod>
           </BoxModalidade>
           <BoxModalidade2>
-            <Mod color={'blue4'}>
-              Eventos
+            <Mod color={'blue2'}>
+              <Books size={50} />
+              <h3>Livros digitais</h3>
             </Mod>
-            <Mod color={'blue1'}>
-              Canal no YouTube
+            <Mod color={'blue4'}>
+              <UsersThree size={50}/>
+              <h3>Eventos</h3>
+            </Mod>
+            <Mod color={'blue3'}>
+              <MonitorPlay size={50}/>
+              <h3>Canal no YouTube</h3>
             </Mod>
           </BoxModalidade2>
         </BodyModalidade>
       </Modalidades>
 
-      <div>oi</div>
+      <Loja>
+        <h1>LOJA</h1>
+      </Loja>
+      
+      <Apoio>
+        <h1>APOIO</h1>
+      </Apoio>
     </SeasideContainer>
   )
 }

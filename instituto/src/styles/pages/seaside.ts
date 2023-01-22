@@ -85,7 +85,7 @@ export const Modalidades = styled('div', {
 });
 
 export const BodyModalidade = styled('div', {
-  display           : 'flex',
+  display           : 'grid',
   gap               : '1rem',
   justifyContent    : 'center',
   alignItems        : 'center',
@@ -101,12 +101,21 @@ export const BoxModalidade2 = styled('div', {
   justifyContent    : 'center',
   alignItems        : 'center',
   gap               : '1rem',
+  marginBottom      : '1rem',
 });
 
 export const Mod = styled('div', {
   width             : '18rem',
-  height            : '30rem',
+  height            : '15rem',
   borderRadius      : '.5rem',
+  alignItems        : 'center',
+  justifyContent    : 'center',
+  textAlign         : 'center',
+  cursor            : 'pointer',
+
+  svg: {
+    margin          : '2rem 0 3.5rem 0',
+  },
 
   '&:hover' : {
     color           : '$black',
@@ -119,6 +128,9 @@ export const Mod = styled('div', {
       blue1: {
         backgroundColor: '$blue100',
       },
+      blue2: {
+        backgroundColor: '$blue200',
+      },
       blue3: {
         backgroundColor: '$blue300',
       },
@@ -130,4 +142,12 @@ export const Mod = styled('div', {
       },
     },
   },
+});
+
+export const Apoio = styled('div', {
+
+});
+
+export const Loja = styled('div', {
+
 });
