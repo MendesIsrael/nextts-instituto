@@ -1,6 +1,5 @@
-import { url } from "inspector";
 import { styled } from ".."
-import mergulhadora from '../../assets/fotos/mergulhadora.jpg'
+
 export const SeasideContainer = styled('div',{
   h1: {
     textAlign     : 'center',
@@ -86,24 +85,49 @@ export const Modalidades = styled('div', {
 });
 
 export const BodyModalidade = styled('div', {
-  
-})
+  display           : 'flex',
+  gap               : '1rem',
+  justifyContent    : 'center',
+  alignItems        : 'center',
+});
 
 export const BoxModalidade = styled('div', {
+  display           : 'flex',
+  gap               : '1rem',
+});
+
+export const BoxModalidade2 = styled('div', {
   display           : 'flex',
   justifyContent    : 'center',
   alignItems        : 'center',
   gap               : '1rem',
-})
-
-export const Mod1 = styled('div', {
-  backgroundColor   : '$green100',
-  height            : '8rem',
-  width             : '13rem',
 });
 
-export const Mod2 = styled('div', {
-  backgroundColor   : '$green400',
-  height            : '8rem',
-  width             : '13rem',
+export const Mod = styled('div', {
+  width             : '18rem',
+  height            : '30rem',
+  borderRadius      : '.5rem',
+
+  '&:hover' : {
+    color           : '$black',
+    backgroundColor : '$white',
+    transition      : '.6s',
+  },
+
+  variants: {
+    color: {
+      blue1: {
+        backgroundColor: '$blue100',
+      },
+      blue3: {
+        backgroundColor: '$blue300',
+      },
+      blue4: {
+        backgroundColor: '$blue400',
+      },
+      blue5: {
+        backgroundColor: '$blue500',
+      },
+    },
+  },
 });
