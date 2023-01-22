@@ -2,39 +2,40 @@ import { styled } from ".."
 
 export const SeasideContainer = styled('div',{
   h1: {
-    textAlign     : 'center',
-    fontSize      : '2rem',
-    paddingTop    : '2rem',
+    textAlign       : 'center',
+    fontSize        : '2rem',
+    paddingTop      : '2rem',
     
     '@bp1': {
-      fontSize    : '1.3rem',
-      paddingTop  : '1rem',
+      fontSize      : '1.3rem',
+      paddingTop    : '1rem',
     }
   },
 
   h2: {
-    textAlign     : 'center',
-    padding       : '2rem',
-    fontSize      : '1.3rem',
-    textDecoration: 'underline',
+    textAlign       : 'center',
+    padding         : '2rem',
+    fontSize        : '1.3rem',
+    textDecoration  : 'underline',
 
     '@bp1': {
-      fontSize    : '1rem',
-      padding     : '1rem',
+      fontSize      : '1rem',
+      padding       : '1rem',
     }
   },
 
   p: {
-    textAlign     : 'justify',
-    padding       : '2rem',
-    textIndent    : '2.5rem',
+    textAlign       : 'justify',
+    padding         : '2rem',
+    textIndent      : '2.5rem',
 
     '@bp1': {
-      fontSize    : '.8rem',
+      fontSize      : '.8rem',
     }
   },
 });
 
+/*-------------------------------------------------------------------------------------------------------------------*/
 export const TitleSeaside = styled('div', {
   height            : '35rem',
   display           : 'flex',
@@ -54,10 +55,7 @@ export const TitleSeaside = styled('div', {
   },
 });
 
-export const Noticias = styled('div', {
-  
-});
-
+/*-------------------------------------------------------------------------------------------------------------------*/
 export const TextExplicativo = styled('div', {
   height            : '26.5625rem',
   display           : 'flex',
@@ -79,6 +77,7 @@ export const TextExplicativo = styled('div', {
   },
 });
 
+/*-------------------------------------------------------------------------------------------------------------------*/
 export const Modalidades = styled('div', {
   backgroundColor   : '$black',
   color             : '$white',
@@ -97,8 +96,8 @@ export const BoxModalidade = styled('div', {
   gap               : '1rem',
 
   a:{
-    textDecoration    : 'none',
-    color             : '$white',
+    textDecoration  : 'none',
+    color           : '$white',
   },
 });
 
@@ -107,12 +106,12 @@ export const BoxModalidade2 = styled('div', {
   gap               : '1rem',
 
   a:{
-    textDecoration    : 'none',
-    color             : '$white',
+    textDecoration  : 'none',
+    color           : '$white',
   },
 });
 
-export const Mod = styled('div', {
+export const Mod = styled('a', {
   width             : '18rem',
   height            : '15rem',
   borderRadius      : '.5rem',
@@ -151,10 +150,22 @@ export const Mod = styled('div', {
   },
 });
 
-export const Apoio = styled('div', {
+/*-------------------------------------------------------------------------------------------------------------------*/
+export const Certificado = styled('div', {
+  display           : 'grid',
+  justifyContent    : 'center',
+  gap               : '2rem',
+  color             : '$white',
+  backgroundColor   : '$blue400',
+  objectFit         : 'cover',
+});
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+export const Loja = styled('div', {
 
 });
 
-export const Loja = styled('div', {
+/*-------------------------------------------------------------------------------------------------------------------*/
+export const Apoio = styled('div', {
 
 });

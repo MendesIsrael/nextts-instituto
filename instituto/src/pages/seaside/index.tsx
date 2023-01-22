@@ -1,4 +1,4 @@
-import { Apoio, BodyModalidade, BoxModalidade, BoxModalidade2, Loja, Mod, Modalidades, SeasideContainer, TextExplicativo, TitleSeaside } from "../../styles/pages/seaside";
+import { Apoio, BodyModalidade, BoxModalidade, BoxModalidade2, Certificado, Loja, Mod, Modalidades, SeasideContainer, TextExplicativo, TitleSeaside } from "../../styles/pages/seaside";
 import { BodyNoticias, Noticias } from "../../styles/pages/home";
 import { Login } from "../../components/buttonlogin";
 import Link from "next/link";
@@ -13,6 +13,7 @@ import momento2 from '../../assets/fotos/momentos2.jpg'
 import momento3 from '../../assets/fotos/momentos3.jpg'
 import momento4 from '../../assets/fotos/momentos4.jpg'
 import mergulhadora2 from '../../assets/fotos/mergulhadora2.jpg'
+import cetificado from '../../assets/fotos/modelo-certificado.jpg'
 
 
 export default function Seaside() {
@@ -59,47 +60,52 @@ export default function Seaside() {
         <h1>MODALIDADE</h1>
         <BodyModalidade>
           <BoxModalidade>
-            <a href="#">
+            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
               <Mod color={'blue5'}>
                 <Student size={50}/>
-                <h3>Curso presenciais</h3>
+                <h3>Cursos presenciais</h3>
               </Mod>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
               <Mod color={'blue3'}>
                 <ChalkboardTeacher size={50}/>
                 <h3>Palestras</h3>
               </Mod>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
               <Mod color={'blue1'}>
                 <Rss size={50}/>
                 <h3>Cursos EaD</h3>
               </Mod>
-            </a>
+            </Link>
           </BoxModalidade>
           <BoxModalidade2>
-            <a href="#">
+            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
               <Mod color={'blue2'}>
                 <Books size={50} />
                 <h3>Livros digitais</h3>
               </Mod>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
               <Mod color={'blue4'}>
                 <UsersThree size={50}/>
                 <h3>Eventos</h3>
               </Mod>
-            </a>
-            <a href="https://www.youtube.com/@seasideservicosea" target="_blank">
+            </Link>
+            <Link href={'https://www.youtube.com/@seasideservicosea'} target="_blank" legacyBehavior>
               <Mod color={'blue3'}>
                 <MonitorPlay size={50}/>
                 <h3>Canal no YouTube</h3>
               </Mod>
-            </a>
+            </Link>
           </BoxModalidade2>
         </BodyModalidade>
       </Modalidades>
+      
+      <Certificado>
+        <h1>MODELO DE CETIFICADO</h1>
+        <Image src={cetificado} width={708} height={500}/>
+      </Certificado>
 
       <Loja>
         <h1>LOJA</h1>
@@ -107,9 +113,6 @@ export default function Seaside() {
       
       <Apoio>
         <h1>APOIO</h1>
-        <Link href={'https://sandbox.pagseguro.uol.com.br'} legacyBehavior>
-          <a>oi</a>
-        </Link>
       </Apoio>
     </SeasideContainer>
   )
