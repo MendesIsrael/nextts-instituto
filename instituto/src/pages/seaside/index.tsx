@@ -92,7 +92,7 @@ export default function Seaside() {
                 <h3>Eventos</h3>
               </Mod>
             </Link>
-            <Link href={'https://www.youtube.com/@seasideservicosea'} target="_blank" legacyBehavior>
+            <Link href={'https://www.youtube.com/@seasideservicosea'} target="_blank" passHref legacyBehavior>
               <Mod color={'blue3'}>
                 <MonitorPlay size={50}/>
                 <h3>Canal no YouTube</h3>

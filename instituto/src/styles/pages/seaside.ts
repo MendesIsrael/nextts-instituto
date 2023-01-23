@@ -118,6 +118,7 @@ export const Mod = styled('a', {
   alignItems        : 'center',
   justifyContent    : 'center',
   textAlign         : 'center',
+  cursor            : 'pointer',
 
   svg: {
     margin          : '2rem 0 3.5rem 0',
