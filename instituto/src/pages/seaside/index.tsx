@@ -80,7 +80,7 @@ export default function Seaside() {
             </Link>
           </BoxModalidade>
           <BoxModalidade2>
-            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
+            <Link href={'/seaside/ebooks'}  legacyBehavior>
               <Mod color={'blue2'}>
                 <Books size={50} />
                 <h3>Livros digitais</h3>
@@ -92,7 +92,7 @@ export default function Seaside() {
                 <h3>Eventos</h3>
               </Mod>
             </Link>
-            <Link href={'https://www.youtube.com/@seasideservicosea'} target="_blank" passHref legacyBehavior>
+            <Link href={'https://www.youtube.com/@seasideservicosea'}  passHref legacyBehavior target={"_blank"} >
               <Mod color={'blue3'}>
                 <MonitorPlay size={50}/>
                 <h3>Canal no YouTube</h3>
