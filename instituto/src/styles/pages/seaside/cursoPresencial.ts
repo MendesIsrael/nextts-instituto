@@ -38,7 +38,6 @@ export const TextoPresencialEad = styled('div', {
 });
 
 export const Cursos = styled('div', {
-  height              : '100%',
   padding             : '2rem',
   textAlign           : 'center',
 });
@@ -57,8 +56,8 @@ export const BoxCursos = styled('div', {
 });
 
 export const ItemCurso = styled('div', {
-  width               : '18rem',
-  height              : '22rem',
+  width               : '19rem',
+  height              : '26rem',
   borderRadius        : '.5rem',
   textAlign           : 'center',
   cursor              : 'pointer',
@@ -69,7 +68,7 @@ export const ItemCurso = styled('div', {
 
   h1: {
     fontSize          : '1.8rem',
-    margin            : '.5rem',
+    margin            : '2rem 0',
     color             : '$blue300',
     fontWeight        : 'bold',
   },
@@ -95,7 +94,7 @@ export const PrecoPresencialEad = styled('div', {
   height              : '1.4rem',
   width               : '5rem',
   borderRadius        : '.4rem',
-  margin              : '1rem auto 1rem 12rem',
+  margin              : '1rem auto 1rem 13rem',
   color               : '$white',
   backgroundColor     : '$blue400'
 });

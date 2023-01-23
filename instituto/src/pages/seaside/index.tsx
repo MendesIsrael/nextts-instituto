@@ -72,7 +72,7 @@ export default function Seaside() {
                 <h3>Palestras</h3>
               </Mod>
             </Link>
-            <Link href={'/seaside/cursoPresencial'}  legacyBehavior>
+            <Link href={'/seaside/cursoEad'}  legacyBehavior>
               <Mod color={'blue1'}>
                 <Rss size={50}/>
                 <h3>Cursos EaD</h3>
