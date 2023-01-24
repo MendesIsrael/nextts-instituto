@@ -1,12 +1,15 @@
 import { Apoio, BodyModalidade, BoxModalidade, BoxModalidade2, Certificado, Loja, Mod, Modalidades, SeasideContainer, TextExplicativo, TitleSeaside } from "../../styles/pages/seaside";
 import { BodyNoticias, Noticias } from "../../styles/pages/home";
 import { Login } from "../../components/buttonlogin";
+import { Insta } from "../../styles/components/navBar";
+
 import Link from "next/link";
 import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Books, ChalkboardTeacher, MonitorPlay, Rss, Student, UserCircle, UsersThree } from "phosphor-react";
 
 import Image from 'next/legacy/image'
+import instagram from '../../assets/contatos/instagram.png'
 import logoSeaside from '../../assets/logos/logo-preta-seaside.png'
 import momento1 from '../../assets/fotos/momentos1.jpg'
 import momento2 from '../../assets/fotos/momentos2.jpg'
@@ -26,6 +29,11 @@ export default function Seaside() {
         <Link href={'/seaside/loginSeaside'} legacyBehavior>
           <Login color="blue">LOGIN<UserCircle size={30}/></Login>
         </Link>
+        <Insta>
+          <a href="https://www.instagram.com/institutomendesa/" target="_blank">
+            <Image src={instagram} width={17} height={17} />
+          </a>
+        </Insta>
       </TitleSeaside>
 
       <Noticias>
@@ -92,8 +100,8 @@ export default function Seaside() {
                 <h3>Eventos</h3>
               </Mod>
             </Link>
-            <Link href={'https://www.youtube.com/@seasideservicosea'}  passHref legacyBehavior target={"_blank"} >
-              <Mod color={'blue3'}>
+            <Link href={'https://www.youtube.com/@seasideservicosea'}  passHref legacyBehavior >
+              <Mod color={'blue3'} target='_blank' >
                 <MonitorPlay size={50}/>
                 <h3>Canal no YouTube</h3>
               </Mod>

@@ -1,6 +1,7 @@
 import { TitleVigor, VigorContainer, DivBoxGreen, Modalidades, Atividades, Pacotes, Planos, ItensPlanos, PrecoPlanos, TitlePlanos, Adicionais, BodyAdicionais, ItensAdicionais, PreçoAdicionais, TextMotivacional, ImgAcademia, MoreInformation } from "../../styles/pages/vigor";
 import { BodyNoticias } from "../../styles/pages/home";
 import { Login } from "../../components/buttonlogin";
+import { Insta } from "../../styles/components/navBar";
 
 import Link from "next/link"
 import { YinYang, Barbell, ForkKnife, Check, X, UserCircle } from "phosphor-react"
@@ -9,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { AlertDialogFuncional, AlertDialogHidro, AlertDialogLutas, AlertDialogPilates } from "../../components/alertDialog";
 
 import Image from 'next/legacy/image'
+import instagram from '../../assets/contatos/instagram.png'
 import logoVigor from '../../assets/logos/logo-vigor.png'
 import pilates from '../../assets/modalidades/pilates.jpg'
 import hidroGinastica from '../../assets/modalidades/hidroGinastica.jpg'
@@ -17,6 +19,7 @@ import lutas from '../../assets/modalidades/lutas.jpg'
 import academia1 from '../../assets/academia/academia01.jpg'
 import academia2 from '../../assets/academia/academia02.jpg'
 import academia3 from '../../assets/academia/academia03.jpg'
+
 
 
 
@@ -29,6 +32,11 @@ export default function Vigor() {
         <Link href={'/vigor/loginVigor'} legacyBehavior>
           <Login color="green">LOGIN<UserCircle size={30}/></Login>
         </Link>
+        <Insta>
+          <a href="https://www.instagram.com/institutomendesa/" target="_blank">
+            <Image src={instagram} width={17} height={17} />
+          </a>
+        </Insta>
       </TitleVigor>
 
       <VigorContainer>

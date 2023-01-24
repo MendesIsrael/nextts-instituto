@@ -3,7 +3,7 @@ import { Contato, Menu, NavPages } from "../styles/components/navBar"
 
 import Image from 'next/legacy/image'
 import whatsapp from '../assets/contatos/whatsapp.png'
-import instagram from '../assets/contatos/instagram.png'
+
 import facebook from '../assets/contatos/facebook.png'
 import email from '../assets/contatos/email.png'
 
@@ -27,9 +27,7 @@ export default function NavBar() {
         <a href="#" target="_blank">
           <Image src={whatsapp} width={16} height={16} />
         </a>
-        <a href="https://www.instagram.com/institutomendesa/" target="_blank">
-          <Image src={instagram} width={16} height={16} />
-        </a>
+        
         <a href="https://www.facebook.com/profile.php?id=100089147117778" target="_blank">
           <Image src={facebook} width={16} height={16} />
         </a>
@@ -42,7 +40,9 @@ export default function NavBar() {
 }
 
 
-
+//<a href="https://www.instagram.com/institutomendesa/" target="_blank">
+  //        <Image src={instagram} width={16} height={16} />
+    //    </a>
 
 
 
