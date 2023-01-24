@@ -15,7 +15,6 @@ import cursoTartaruga from '../../assets/cursos/presencial6.jpg'
 export default function CursoPresencial() {
   return (
     <PresencialEad>
-
       <TitlePresencialEad>
         <h1>CURSOS PRESENCIAIS</h1>
         <Image src={mergulhadora2} height={425} width={1345} />
