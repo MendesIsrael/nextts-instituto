@@ -3,6 +3,7 @@ import { BoxCursos, CorpoCursos, Cursos, ItemCurso, PrecoPresencialEad, Presenci
 import { CaretDoubleRight } from "phosphor-react"
 
 import Image from 'next/legacy/image'
+import instagram from '../../assets/contatos/instagram.png'
 import mergulhadora2 from '../../assets/fotos/mergulhadora2.jpg'
 import cursoPoluicao from '../../assets/cursos/ead1.jpg'
 import cursoCorais from '../../assets/cursos/ead2.jpg'
@@ -10,7 +11,16 @@ import cursoAguaViva from '../../assets/cursos/ead3.jpg'
 import cursoLeaoMarinho from '../../assets/cursos/ead4.jpg'
 import cursoPraias from '../../assets/cursos/ead5.jpg'
 import cursoPinguins from '../../assets/cursos/ead6.jpg'
+import { Insta } from '../../styles/components/navBar'
 
+
+/*import { Insta } from "../../styles/components/navBar";
+import instagram from '../../assets/contatos/instagram.png'
+        <Insta>
+          <a href="https://www.instagram.com/institutomendesa/" target="_blank">
+            <Image src={instagram} width={17} height={17} />
+          </a>
+        </Insta>*/
 
 export default function CursoEad() {
   return (
@@ -19,6 +29,11 @@ export default function CursoEad() {
       <TitlePresencialEad>
         <h1>CURSOS EAD</h1>
         <Image src={mergulhadora2} height={425} width={1345} />
+        <Insta>
+          <a href="https://www.instagram.com/institutomendesa/" target="_blank">
+            <Image src={instagram} width={17} height={17} />
+          </a>
+        </Insta>
       </TitlePresencialEad>
 
       <TextoPresencialEad>
