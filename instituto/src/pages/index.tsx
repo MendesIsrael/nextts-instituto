@@ -25,7 +25,7 @@ export default function Home() {
         </ImagemBox>
         <video src={require('../assets/videos/home.mp4')} autoPlay loop muted />
       </Title>
-      oi
+      
       <Noticias>
         <h1>NOTÍCIAS</h1>
         <BodyNoticias>
