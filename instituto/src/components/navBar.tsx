@@ -24,14 +24,14 @@ export default function NavBar() {
         </li>
       </NavPages>
       <Contato>
-        <a href="#" target="_blank">
+        <a href="#" >
           <Image src={whatsapp} width={16} height={16} />
         </a>
         
-        <a href="https://www.facebook.com/profile.php?id=100089147117778" target="_blank">
+        <a href="https://www.facebook.com/profile.php?id=100089147117778">
           <Image src={facebook} width={16} height={16} />
         </a>
-        <a href="mailto:institutomendesa@outlook.com" target="_blank">
+        <a href="mailto:institutomendesa@outlook.com">
         <Image src={email} width={18} height={16} />
         </a>
       </Contato>
@@ -39,7 +39,7 @@ export default function NavBar() {
   )
 }
 
-
+//target="_blank"
 
 
 

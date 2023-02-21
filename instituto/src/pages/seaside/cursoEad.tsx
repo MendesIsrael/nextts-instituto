@@ -30,7 +30,7 @@ export default function CursoEad() {
         <h1>CURSOS EAD</h1>
         <Image src={mergulhadora2} height={425} width={1345} />
         <Insta>
-          <a href="https://www.instagram.com/institutomendesa/" target="_blank">
+          <a href="https://www.instagram.com/institutomendesa/">
             <Image src={instagram} width={17} height={17} />
           </a>
         </Insta>

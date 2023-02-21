@@ -88,7 +88,7 @@ export default function Home() {
         <ContainerBio>
           <h1>Israel Mendes</h1>
           <Bio>
-            <a href="https://www.instagram.com/mendesisrael97/" target="_blank">
+            <a href="https://www.instagram.com/mendesisrael97/">
               <ImagemBox3>
                 <Image src={fotoIsrael} />
               </ImagemBox3>
@@ -100,7 +100,7 @@ export default function Home() {
           <h1>Rafaela de Sá</h1>
           <Bio>
             <p>Bióloga (Bacharel e licenciatura), empresária, especialista em Ciências Ambientais em Áreas Costeiras, pós-graduanda em Biologia Marinha, mergulhadora certificada pela PADI com cursos em ecologia de organismos bentônicos, bioinvasão marinha e ameaças ao ecossistema de costão rochoso, macroinvertebrados bentônicos como ferramenta na avaliação da qualidade ambiental de ecossistemas costeiras, e educação ambiental em ecossistemas costeiros. Possui trabalhos publicados no campo da educação ambiental e ecossistema costeiro, com foco nos Manguezais da Baía de Guanabara. Já foi monitora no Herbário do Museu Nacional (UFRJ), monitora da disciplina de Poluição Marinha (FAMATH) e atuou no Coletivo Jovem durante a 3ª fase do Projeto UÇÁ. Atualmente, produz guias de campo e jogos didáticos, coordena a Seaside Serviços Educacionais e faz parte da Associação dos Protetores do Mar trabalhando como Educadora Ambiental, através do programa socioambiental da Petrobras.</p>
-            <a href="https://www.instagram.com/rafaelasacoelho/" target="_blank">
+            <a href="https://www.instagram.com/rafaelasacoelho/">
               <ImagemBox3>
                 <Image src={fotoRafaela} />
               </ImagemBox3>
@@ -117,7 +117,7 @@ export default function Home() {
 
       <Parceiros>
         <h1>PARCEIROS</h1>
-        <a href="https://www.instagram.com/rc_arkhidesign/" target="_blank">
+        <a href="https://www.instagram.com/rc_arkhidesign/">
           <Image src={parceiroArkhi} height={100} width={100} />
         </a>
       </Parceiros>

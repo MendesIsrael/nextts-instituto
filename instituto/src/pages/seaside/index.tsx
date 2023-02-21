@@ -30,7 +30,7 @@ export default function Seaside() {
           <Login color="blue">LOGIN<UserCircle size={30}/></Login>
         </Link>
         <Insta>
-          <a href="https://www.instagram.com/institutomendesa/" target="_blank">
+          <a href="https://www.instagram.com/institutomendesa/">
             <Image src={instagram} width={17} height={17} />
           </a>
         </Insta>
