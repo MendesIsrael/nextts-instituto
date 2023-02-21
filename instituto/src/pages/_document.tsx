@@ -3,7 +3,7 @@ import { getCssText } from '../styles'
 
 export default function Document() {
   return (
-    <Html lang="pt-br">
+    <Html lang="pt-BR">
       <Head>
         <title>Instituto Mendes de Sá</title>
         <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
