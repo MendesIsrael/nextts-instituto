@@ -40,10 +40,6 @@ export default function NavBar() {
 }
 
 
-//<a href="https://www.instagram.com/institutomendesa/" target="_blank">
-  //        <Image src={instagram} width={16} height={16} />
-    //    </a>
-
 
 
 
