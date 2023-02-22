@@ -41,7 +41,7 @@ export default function Vigor() {
 
       <VigorContainer>
         <TextMotivacional>
-          <p>A sua melhor opção na hora de levar uma vida mais saudável</p>
+          <p>A sua melhor opção na hora de levar uma vida mais saudável2</p>
         </TextMotivacional>
 
         <DivBoxGreen>
