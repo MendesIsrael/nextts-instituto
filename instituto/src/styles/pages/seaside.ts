@@ -75,6 +75,20 @@ export const TextExplicativo = styled('div', {
     textIndent      : '0',
     textAlign       : 'center',
   },
+
+  '@bp2': {
+    height          : 'auto',
+
+    h1: {
+      margin          : '2rem auto auto -22rem',
+      fontSize        : '1rem',
+    },
+
+    p: {
+      margin          : '4rem auto auto -22rem',
+      fontSize        : '.6rem',
+    },
+  }
 });
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -147,6 +161,15 @@ export const Mod = styled('a', {
       blue5: {
         backgroundColor: '$blue500',
       },
+    },
+  },
+
+  '@bp2': {
+    width           : '11rem',
+    height          : '11rem',
+
+    svg: {
+      margin          : '.9rem 0 2rem 0',
     },
   },
 });

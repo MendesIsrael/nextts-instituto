@@ -18,7 +18,7 @@ export const NavPages = styled('div', {
   left                : '42%',
 
   '@bp2': {
-    left                : '1%',
+    left              : '1%',
   },
   
 
@@ -63,18 +63,22 @@ export const Contato = styled('div', {
 });
 
 export const Insta = styled('div', {
-  position       : 'absolute',
-  margin         : '-31.9rem -67.3rem auto auto',
-  zIndex         : '1',
-  display        : 'flex',
-  justifyContent : 'center',
-  alignItems     : 'center',
-  borderRadius   : '1rem',
-  height         : '2rem',
-  width          : '2rem',
+  position            : 'absolute',
+  margin              : '-31.9rem -67.3rem auto auto',
+  zIndex              : '1',
+  display             : 'flex',
+  justifyContent      : 'center',
+  alignItems          : 'center',
+  borderRadius        : '1rem',
+  height              : '2rem',
+  width               : '2rem',
   
   '&:hover': {
     backgroundColor   : '$black',
     transition        : '1s',
   },
+
+  '@bp2': {
+    margin            : '-31.9rem -22.2rem auto auto',
+  }
 }); 
