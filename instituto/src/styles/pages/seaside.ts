@@ -1,6 +1,7 @@
 import { styled } from ".."
 
 export const SeasideContainer = styled('div',{
+
   h1: {
     textAlign       : 'center',
     fontSize        : '2rem',
@@ -76,9 +77,21 @@ export const TextExplicativo = styled('div', {
     textAlign       : 'center',
   },
 
-  '@bp2': {
+  '@bp3': {
     height          : 'auto',
 
+    h1: {
+      margin          : '3rem auto auto -22rem',
+      fontSize        : '1.2rem',
+    },
+
+    p: {
+      margin          : '6rem auto auto -22rem',
+      fontSize        : '.8rem',
+    },
+  },
+  
+  '@bp2': {
     h1: {
       margin          : '-1.5rem auto auto -14rem',
       fontSize        : '1rem',
@@ -88,7 +101,20 @@ export const TextExplicativo = styled('div', {
       margin          : '0rem auto auto -14rem',
       fontSize        : '.6rem',
     },
-  }
+  },
+
+  '@bp1': {
+    h1: {
+      margin          : '3.5rem auto auto -14rem',
+      fontSize        : '1rem',
+    },
+
+    p: {
+      margin          : '-1rem auto auto -4rem',
+      fontSize        : '.6rem',
+    },
+  },
+
 });
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -164,12 +190,30 @@ export const Mod = styled('a', {
     },
   },
 
+  '@bp3': {
+    width           : '13rem',
+    height          : '13rem',
+
+    svg: {
+      margin        : '2rem 0 1.9rem 0',
+    },
+  },
+
   '@bp2': {
     width           : '8rem',
     height          : '8rem',
 
     svg: {
       margin        : '.4rem 0 .6rem 0',
+    },
+  },
+
+  '@bp1': {
+    width           : '7.5rem',
+    height          : '8rem',
+
+    svg: {
+      margin        : '.2rem 0 .6rem 0',
     },
   },
 });

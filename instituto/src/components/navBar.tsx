@@ -27,7 +27,6 @@ export default function NavBar() {
         <a href="#" >
           <Image src={whatsapp} width={16} height={16} />
         </a>
-        
         <a href="https://www.facebook.com/profile.php?id=100089147117778">
           <Image src={facebook} width={16} height={16} />
         </a>

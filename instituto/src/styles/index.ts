@@ -13,6 +13,7 @@ export const {
   media: {
     bp1: '(max-width: 400px)',
     bp2: '(max-width: 700px)',
+    bp3: '(max-width: 900px)',
   },
   theme: {
     colors: {

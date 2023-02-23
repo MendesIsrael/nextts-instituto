@@ -64,7 +64,7 @@ export const Contato = styled('div', {
 
 export const Insta = styled('div', {
   position            : 'absolute',
-  margin              : '-31.9rem -67.3rem auto auto',
+  margin              : '-31.938rem auto auto calc(100% - 270px)',
   zIndex              : '1',
   display             : 'flex',
   justifyContent      : 'center',
@@ -79,6 +79,7 @@ export const Insta = styled('div', {
   },
 
   '@bp2': {
-    margin            : '-31.9rem -15rem auto auto',
+    margin            : '-31.938rem auto auto calc(100% - 240px)',
   }
 }); 
+// margin              : '-27rem 1rem auto 90%',
