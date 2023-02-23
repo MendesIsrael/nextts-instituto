@@ -79,6 +79,6 @@ export const Insta = styled('div', {
   },
 
   '@bp2': {
-    margin            : '-31.9rem -22.2rem auto auto',
+    margin            : '-31.9rem -15rem auto auto',
   }
 }); 

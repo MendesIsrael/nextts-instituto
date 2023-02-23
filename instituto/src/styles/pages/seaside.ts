@@ -80,12 +80,12 @@ export const TextExplicativo = styled('div', {
     height          : 'auto',
 
     h1: {
-      margin          : '2rem auto auto -22rem',
+      margin          : '-1.5rem auto auto -14rem',
       fontSize        : '1rem',
     },
 
     p: {
-      margin          : '4rem auto auto -22rem',
+      margin          : '0rem auto auto -14rem',
       fontSize        : '.6rem',
     },
   }
@@ -165,11 +165,11 @@ export const Mod = styled('a', {
   },
 
   '@bp2': {
-    width           : '11rem',
-    height          : '11rem',
+    width           : '8rem',
+    height          : '8rem',
 
     svg: {
-      margin          : '.9rem 0 2rem 0',
+      margin        : '.4rem 0 .6rem 0',
     },
   },
 });
